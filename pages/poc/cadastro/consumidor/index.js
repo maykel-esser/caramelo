@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { IMaskInput } from "react-imask";
 import { TextInput, Button, PasswordInput, Progress, Popover } from "@mantine/core";
-import { getStrength, PasswordRequirement, passwordRequirements } from "/utils/password-utils";
+import { getStrength, PasswordRequirement, passwordRequirementsRules } from "/utils/password-utils";
 
 // Icons
 import { PhoneIcon } from "@heroicons/react/24/outline";
@@ -14,7 +14,7 @@ export default function Page() {
     const [popoverOpened, setPopoverOpened] = useState(false);
 
     // Password meter
-    const requirements = passwordRequirements();
+    const requirements = passwordRequirementsRules();
     const strength = getStrength(passwordValue);
     const color = strength === 100 ? "teal" : strength > 50 ? "yellow" : "red";
 
@@ -66,7 +66,6 @@ export default function Page() {
                             </Popover.Target>
                             <Popover.Dropdown>
                                 <Progress color={color} value={strength} size={5} mb="xs" />
-                                <PasswordRequirement label="Inclua ao menos 6 caracteres" meets={passwordValue.length > 5} />
                                 {checks}
                             </Popover.Dropdown>
                         </Popover>
