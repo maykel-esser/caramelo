@@ -2,7 +2,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { IMaskInput } from "react-imask";
 import { TextInput, Button, PasswordInput, Progress, Popover } from "@mantine/core";
-import { getStrength, PasswordRequirement, passwordRequirementsRules } from "/utils/password-utils";
+import { PasswordRequirement } from "/components/poc/form/password";
+import { getStrength, passwordRequirementsRules } from "/utils/password.utils";
 
 // Icons
 import { PhoneIcon } from "@heroicons/react/24/outline";

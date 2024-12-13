@@ -1,5 +1,9 @@
-import { XMarkIcon, CheckIcon } from "@heroicons/react/24/outline";
-
+/**
+ * @function passwordRequirementsRules
+ * @author Maykel Esser
+ * @description Get the password requirements rules
+ * @returns {object[]} The password requirements rules
+ */
 function passwordRequirementsRules() {
     const requirements = [
         { re: /.{6,}/, label: "Inclua ao menos 6 caracteres" },
@@ -11,19 +15,13 @@ function passwordRequirementsRules() {
     return requirements;
 }
 
-function PasswordRequirement({ meets, label }) {
-    return (
-        <div className={`flex items-center mt-2 text-sm ${meets ? "text-teal-500" : "text-red-500"}`}>
-            {meets ? (
-                <CheckIcon className="w-3" />
-            ) : (
-                <XMarkIcon className="w-3" />
-            )}
-            <span className="ml-2">{label}</span>
-        </div>
-    );
-}
-
+/**
+ * @function getStrength
+ * @author Maykel Esser
+ * @description Get the password strength based on the requirements
+ * @param {*} password
+ * @returns {number} The password strength
+ */
 function getStrength(password) {
 
     let multiplier = password.length > 5 ? 0 : 1;
@@ -38,4 +36,4 @@ function getStrength(password) {
     return Math.max(100 - (100 / (requirements.length + 1)) * multiplier, 10);
 }
 
-export { PasswordRequirement, getStrength, passwordRequirementsRules };
+module.exports = { getStrength, passwordRequirementsRules };
