@@ -12,7 +12,7 @@ import {
 } from "@mantine/core";
 
 // Images
-import Logo from "/public/images/logos/logo-caramelo-vertical.png";
+import Logo from "public/images/logos/logo-caramelo-vertical.png";
 
 // Icons
 import {

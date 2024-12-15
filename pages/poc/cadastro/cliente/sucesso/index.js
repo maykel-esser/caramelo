@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button } from "@mantine/core";
 
 // Images
-import SignUpBusinessSuccess from "/public/images/signup/signup-business-success.png";
+import SignUpBusinessSuccess from "public/images/signup/signup-business-success.png";
 
 export default function Page() {
     return (

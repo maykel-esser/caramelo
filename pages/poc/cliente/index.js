@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Avatar } from "@mantine/core";
 import { LineChart } from "@mantine/charts";
 import { BellIcon } from "@heroicons/react/24/outline";
-import { NavigationCliente } from "/components/poc/navigation";
+import { NavigationCliente } from "components/poc/navigation";
 
 // Icons
 import {
