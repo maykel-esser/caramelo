@@ -27,7 +27,8 @@ test("GET Status Endpoint should return an specific database version", async () 
     const response = await fetch("http://localhost:3000/api/v1/status");
     const body = await response.json();
 
-    expect(body.dependencies.database.version).toBe("16.0");
+    // We need the version to be 16.x (dynamic because prod and dev versions may differ)
+    expect(body.dependencies.database.version).toMatch(/^16\./);
 });
 
 test("GET Status Endpoint should return the same date as a dummy date", async () => {
@@ -44,7 +45,13 @@ test("GET Status Endpoint should return the same max_connections as 100", async 
     const response = await fetch("http://localhost:3000/api/v1/status");
     const body = await response.json();
 
-    expect(body.dependencies.database.max_connections).toEqual(100);
+
+    // if the environment is dev, max_connections should be 100
+    if (process.env.NODE_ENV === "dev") {
+        expect(body.dependencies.database.max_connections).toEqual(100);
+    } else if (process.env.NODE_ENV === "prod") {
+        expect(body.dependencies.database.max_connections).toEqual(112);
+    }
 });
 
 test("GET Status Endpoint should return the same used_connections as 1", async () => {
