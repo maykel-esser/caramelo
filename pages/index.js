@@ -6,7 +6,6 @@ import Logo from "/public/images/logos/logo-caramelo-vertical.png";
 export default function Page() {
     return (
         <>
-            <h1>Oi Michel</h1>
             <div className="text-center p-16">
                 <div className="flex justify-center mb-20">
                     <Image src={Logo} alt="®" width={200} />
