@@ -4,6 +4,12 @@ import database from "infra/database";
 
 export default async function migrations(req, res) {
 
+    const allowedMethods = ["GET", "POST"];
+
+    if (!allowedMethods.includes(req.method)) {
+        return res.status(405).end();
+    }
+
     const dbClient = await database.getNewClient();
 
     let defaultMigrationOptions = {
@@ -40,7 +46,4 @@ export default async function migrations(req, res) {
 
         return res.status(200).json(migratedMigrations);
     }
-
-    return res.status(405).end();
-
 }
