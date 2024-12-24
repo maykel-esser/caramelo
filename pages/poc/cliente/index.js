@@ -2,7 +2,6 @@ import Link from "next/link";
 import dynamic from 'next/dynamic';
 import { Avatar } from "@mantine/core";
 import { LineChart } from "@mantine/charts";
-import { BellIcon } from "@heroicons/react/24/outline";
 import { NavigationCliente } from "components/poc/navigation";
 
 // Dynamic imports (lottie need to run at client-side only)
@@ -23,6 +22,7 @@ export default function Page() {
 
     const logoOptions = {
         autoplay: true,
+        loop: false,
         animationData: LogoAnimated
     };
 
@@ -39,28 +39,15 @@ export default function Page() {
             <NavigationCliente />
             <main className="px-4 pb-32">
                 <header className="flex justify-between pt-16 mb-8">
-                    {/* <div className="flex gap-3 items-center">
+                    <div>
                         <Lottie options={logoOptions} height={55} width={55} />
+                    </div>
+                    <div className="relative">
                         <Avatar
                             src="https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250"
                             alt="it's me"
                             size="md"
                         />
-                        <p className="leading-4">
-                            <strong>Usuário teste</strong>
-                            <br />
-                            <small>Seja bem-vindo</small>
-                        </p>
-                    </div>
-                    <div className="relative">
-                        <BellIcon className="bg-black text-white w-10 p-2 rounded-full" />
-                        <span className="absolute inset-0 object-right-top -mr-6 bg-red-500 text-center text-white w-3 h-3 rounded-full"></span>
-                    </div> */}
-                    <div>
-                        <Lottie options={logoOptions} height={55} width={55} />
-                    </div>
-                    <div className="relative">
-                        <BellIcon className="bg-black text-white w-10 p-2 rounded-full" />
                         <span className="absolute inset-0 object-right-top -mr-6 bg-red-500 text-center text-white w-3 h-3 rounded-full"></span>
                     </div>
                 </header>
