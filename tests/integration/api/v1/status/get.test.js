@@ -39,3 +39,20 @@ test("GET Status Endpoint should return the same date as a dummy date", async ()
     const parsedUpdatedAt = new Date(body.updated_at).toISOString();
     expect(body.updated_at).toEqual(parsedUpdatedAt);
 });
+
+test("GET Status Endpoint should return the same max_connections as 100", async () => {
+
+    const response = await fetch("http://localhost:3000/api/v1/status");
+    const body = await response.json();
+
+    // if the environment is dev, max_connections should be 100
+    expect(body.dependencies.database.max_connections).toEqual(100);
+});
+
+test("GET Status Endpoint should return the same used_connections as 1", async () => {
+
+    const response = await fetch("http://localhost:3000/api/v1/status");
+    const body = await response.json();
+
+    expect(body.dependencies.database.used_connections).toEqual(1);
+});
