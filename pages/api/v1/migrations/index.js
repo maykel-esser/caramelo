@@ -7,7 +7,7 @@ export default async function migrations(req, res) {
     const allowedMethods = ["GET", "POST"];
 
     if (!allowedMethods.includes(req.method)) {
-        return res.status(405).end();
+        return res.status(405).json({ message: "Method not allowed" });
     }
 
     const dbClient = await database.getNewClient();
