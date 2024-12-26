@@ -1,9 +1,21 @@
 import migrationRunner from "node-pg-migrate";
-import { join } from "node:path";
 import database from "infra/database";
+import { join } from "node:path";
 
+/**
+ * @function migrations
+ * @author Maykel Esser
+ *
+ * @description This function is responsible for handling the migration of the database.
+ *
+ * @param {*} req - The request object.
+ * @param {*} res - The response object.
+ *
+ * @returns {Array} - Returns an array with the migrations that were executed.
+ */
 export default async function migrations(req, res) {
 
+    // Only GET and POST methods are allowed
     const allowedMethods = ["GET", "POST"];
 
     if (!allowedMethods.includes(req.method)) {
@@ -16,6 +28,7 @@ export default async function migrations(req, res) {
 
     try {
 
+        // Get a new client from the database
         dbClient = await database.getNewClient();
 
         let defaultMigrationOptions = {
@@ -28,6 +41,7 @@ export default async function migrations(req, res) {
 
         if (req.method === "GET") {
 
+            // Dry run mode for test purposes - we can check all migrations without running them
             const pendingMigrations = await migrationRunner({
                 ...defaultMigrationOptions,
                 dryRun: true
