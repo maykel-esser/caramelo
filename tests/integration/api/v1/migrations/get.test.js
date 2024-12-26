@@ -1,4 +1,5 @@
 import database from "infra/database";
+import orchestrator from "tests/orchestrator.js";
 
 async function cleanDatabase() {
     await database.query("DROP SCHEMA public cascade;");
@@ -6,6 +7,7 @@ async function cleanDatabase() {
 }
 
 beforeAll(async () => {
+    await orchestrator.waitForAllServices();
     await cleanDatabase();
 });
 
