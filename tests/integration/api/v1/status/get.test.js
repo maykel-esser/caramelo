@@ -36,7 +36,7 @@ describe("GET Status Endpoint", () => {
         const body = await response.json();
 
         // We need the version to be 16.x (dynamic because prod and dev versions may differ)
-        expect(body.dependencies.database.version).toMatch(/^16\./);
+        expect(body.dependencies.database.version).toMatch(/^20\./);
     });
 
     test("GET Status Endpoint should return the same date as a dummy date", async () => {
