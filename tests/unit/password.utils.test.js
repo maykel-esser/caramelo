@@ -1,5 +1,5 @@
 
-const { getStrength, passwordRequirementsRules } = require("../../utils/password.utils");
+import { getStrength, passwordRequirementsRules } from "utils/password.utils";
 
 describe("getStrength", () => {
 
