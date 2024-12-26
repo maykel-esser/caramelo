@@ -1,13 +1,27 @@
 import { Client } from "pg";
 
+/**
+ * @function query
+ * @author Maykel Esser
+ *
+ * @description Query the database.
+ *
+ * @param {Object} queryObject - The query object.
+ *
+ * @returns {Promise<Object>} The result of the query.
+ */
 async function query(queryObject) {
 
     let client;
 
     try {
+
         client = await getNewClient();
+
         const result = await client.query(queryObject);
+
         return result;
+
     } catch (error) {
         console.error(error);
         throw error;
@@ -16,6 +30,15 @@ async function query(queryObject) {
     }
 }
 
+/**
+ * @function getNewClient
+ * @author Maykel Esser
+ *
+ * @description Get a new client for the connection and connect to the database.
+ *
+ * @returns {Client} The new client.
+ * @see query
+ */
 async function getNewClient() {
 
     const client = new Client({
@@ -32,6 +55,17 @@ async function getNewClient() {
     return client;
 }
 
+/**
+ * @function getSSLValues
+ * @author Maykel Esser
+ *
+ * @description Get the SSL values for the connection. We are checking if
+ * the environment variable POSTGRES_CA is set, if it is we are returning
+ * an object with the ca key and the value of the environment variable.
+ *
+ * @returns {Object} The SSL values.
+ * @see getNewClient
+ */
 function getSSLValues() {
     if (process.env.POSTGRES_CA) {
         return {
@@ -43,5 +77,6 @@ function getSSLValues() {
 
 export default {
     query,
-    getNewClient
+    getNewClient,
+    getSSLValues
 }
