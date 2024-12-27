@@ -1,5 +1,4 @@
 import dotenv from "dotenv";
-import orchestrator from "tests/orchestrator.js";
 import database from "infra/database";
 
 dotenv.config();
