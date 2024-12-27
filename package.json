@@ -24,8 +24,9 @@
         "commit": "cz",
         "secretlint": "npx secretlint \"**/*\""
     },
-    "author": "",
-    "license": "MIT",
+    "author": "Esser Serviços em Tecnologia LTDA (CNPJ 57.962.671/0001-50)",
+    "license": "proprietary",
+    "private": true,
     "dependencies": {
         "@heroicons/react": "^2.2.0",
         "@mantine/charts": "^7.14.3",
