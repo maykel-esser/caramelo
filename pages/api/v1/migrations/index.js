@@ -14,20 +14,18 @@ import { join } from "node:path";
  * @returns {Array} - Returns an array with the migrations that were executed.
  */
 export default async function migrations(req, res) {
-
     // Only GET and POST methods are allowed
     const allowedMethods = ["GET", "POST"];
 
     if (!allowedMethods.includes(req.method)) {
         return res.status(405).json({
-            message: `Method ${req.method} Not Allowed`
+            message: `Method ${req.method} Not Allowed`,
         });
     }
 
     let dbClient;
 
     try {
-
         // Get a new client from the database
         dbClient = await database.getNewClient();
 
@@ -40,20 +38,17 @@ export default async function migrations(req, res) {
         };
 
         if (req.method === "GET") {
-
             // Dry run mode for test purposes - we can check all migrations without running them
             const pendingMigrations = await migrationRunner({
                 ...defaultMigrationOptions,
-                dryRun: true
+                dryRun: true,
             });
 
             return res.status(200).json(pendingMigrations);
-
         } else if (req.method === "POST") {
-
             const migratedMigrations = await migrationRunner({
                 ...defaultMigrationOptions,
-                dryRun: false
+                dryRun: false,
             });
 
             if (migratedMigrations.length > 0) {

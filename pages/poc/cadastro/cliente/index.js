@@ -3,14 +3,27 @@ import { IMaskInput } from "react-imask";
 import { TextInput, Button } from "@mantine/core";
 
 // Icons
-import { PhoneIcon, EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/outline";
+import {
+    PhoneIcon,
+    EnvelopeIcon,
+    MapPinIcon,
+} from "@heroicons/react/24/outline";
 
 export default function Page() {
     return (
         <div className="flex items-center justify-center min-h-screen p-10">
             <div className="w-full max-w-md text-center">
-                <h1 className="text-2xl font-bold mb-5">Eu quero usar para minha empresa</h1>
-                <p className="mb-8">Se você é interessado em ser testar nosso app, junte-se a nós! Tenha acesso gratuito ao Caramelo® por 6 meses e compartilhe seus valiosos feedbacks. Preencha o formulário abaixo, e faremos contato em breve. Seja parte dessa inovação e transforme a experiência de fidelidade para seus clientes!</p>
+                <h1 className="text-2xl font-bold mb-5">
+                    Eu quero usar para minha empresa
+                </h1>
+                <p className="mb-8">
+                    Se você é interessado em ser testar nosso app, junte-se a
+                    nós! Tenha acesso gratuito ao Caramelo® por 6 meses e
+                    compartilhe seus valiosos feedbacks. Preencha o formulário
+                    abaixo, e faremos contato em breve. Seja parte dessa
+                    inovação e transforme a experiência de fidelidade para seus
+                    clientes!
+                </p>
                 <form className="text-left">
                     <div className="mb-3">
                         <TextInput
@@ -35,7 +48,8 @@ export default function Page() {
                             required
                             size="md"
                             radius="md"
-                            component={IMaskInput} mask="(00) 00000-0000"
+                            component={IMaskInput}
+                            mask="(00) 00000-0000"
                             leftSection={<PhoneIcon className="w-5" />}
                         />
                     </div>
@@ -57,7 +71,9 @@ export default function Page() {
                         color="black"
                         component={Link}
                         href="/poc/cadastro/cliente/sucesso"
-                    >Quero experimentar</Button>
+                    >
+                        Quero experimentar
+                    </Button>
                 </form>
             </div>
         </div>

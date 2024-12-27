@@ -39,7 +39,7 @@ async function waitForWebServer() {
     return retry(fetchStatusPage, {
         retries: 100,
         minTimeout: 100,
-        maxTimeout: 1000
+        maxTimeout: 1000,
     });
 }
 
@@ -56,7 +56,6 @@ async function waitForWebServer() {
  * @see waitForWebServer
  */
 async function fetchStatusPage(bail, tryNumber) {
-
     console.log(`Attempt to fetch Status Page ${tryNumber}`);
 
     const response = await fetch("http://localhost:3000/api/v1/status");
@@ -67,5 +66,5 @@ async function fetchStatusPage(bail, tryNumber) {
 }
 
 export default {
-    waitForAllServices
-}
+    waitForAllServices,
+};
