@@ -65,6 +65,8 @@ async function fetchStatusPage(bail, tryNumber) {
     }
 }
 
-export default {
+const orchestrator = {
     waitForAllServices,
 };
+
+export default orchestrator;
