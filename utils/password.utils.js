@@ -28,7 +28,7 @@ function passwordRequirementsRules() {
  */
 function getStrength(password) {
     let multiplier = password.length > 5 ? 0 : 1;
-    let requirements = module.exports.passwordRequirementsRules();
+    let requirements = passwordRequirementsRules();
 
     requirements.forEach((requirement) => {
         if (!requirement.re.test(password)) {
