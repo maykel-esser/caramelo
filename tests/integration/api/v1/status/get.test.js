@@ -5,14 +5,12 @@ beforeAll(async () => {
 });
 
 describe("GET Status Endpoint", () => {
-
     test("GET Status Endpoint should return 200", async () => {
         const response = await fetch("http://localhost:3000/api/v1/status");
         expect(response.status).toBe(200);
     });
 
     test("GET Status Endpoint should return an object containing updated_at, dependencies.database and the required fields", async () => {
-
         const response = await fetch("http://localhost:3000/api/v1/status");
         const body = await response.json();
 
@@ -31,7 +29,6 @@ describe("GET Status Endpoint", () => {
     });
 
     test("GET Status Endpoint should return an specific database version", async () => {
-
         const response = await fetch("http://localhost:3000/api/v1/status");
         const body = await response.json();
 
@@ -40,7 +37,6 @@ describe("GET Status Endpoint", () => {
     });
 
     test("GET Status Endpoint should return the same date as a dummy date", async () => {
-
         const response = await fetch("http://localhost:3000/api/v1/status");
         const body = await response.json();
 
@@ -49,7 +45,6 @@ describe("GET Status Endpoint", () => {
     });
 
     test("GET Status Endpoint should return the same max_connections as 100", async () => {
-
         const response = await fetch("http://localhost:3000/api/v1/status");
         const body = await response.json();
 
@@ -58,11 +53,9 @@ describe("GET Status Endpoint", () => {
     });
 
     test("GET Status Endpoint should return the same used_connections as 1", async () => {
-
         const response = await fetch("http://localhost:3000/api/v1/status");
         const body = await response.json();
 
         expect(body.dependencies.database.used_connections).toEqual(1);
     });
-
 });

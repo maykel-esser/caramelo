@@ -5,7 +5,6 @@ import database from "infra/database";
 dotenv.config();
 
 describe("getSSLValues", () => {
-
     const { getSSLValues } = database;
 
     beforeEach(() => {
@@ -14,7 +13,6 @@ describe("getSSLValues", () => {
     });
 
     it("Should return an object with 'ca' key if POSTGRES_CA is set", () => {
-
         // Setting the environment variable
         process.env.POSTGRES_CA = "some-ca-value";
 
@@ -26,7 +24,6 @@ describe("getSSLValues", () => {
     });
 
     it("Should return true if POSTGRES_CA is not set and NODE_ENV is 'production'", () => {
-
         // Setting the environment
         process.env.NODE_ENV = "production";
 
@@ -38,7 +35,6 @@ describe("getSSLValues", () => {
     });
 
     it("Should return false if POSTGRES_CA is not set and NODE_ENV is not 'production'", () => {
-
         // Setting the environment
         process.env.NODE_ENV = "development";
 
@@ -48,5 +44,4 @@ describe("getSSLValues", () => {
         // Verifying the result
         expect(result).toBe(false);
     });
-
 });

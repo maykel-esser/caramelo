@@ -1,8 +1,6 @@
-
 import { getStrength, passwordRequirementsRules } from "utils/password.utils";
 
 describe("getStrength", () => {
-
     it("should return 10 for empty password", () => {
         const strength = getStrength("");
         expect(strength).toBe(10);
@@ -31,9 +29,7 @@ describe("getStrength", () => {
 });
 
 describe("passwordRequirementsRules", () => {
-
     it("should return an array with requirements, containing two fields each: re and label", () => {
-
         const requirements = passwordRequirementsRules();
 
         expect(requirements).toBeInstanceOf(Array);

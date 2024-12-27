@@ -11,13 +11,15 @@ export default function Page() {
             <div className="w-full max-w-md text-center">
                 <h1 className="text-2xl font-bold mb-5">Tudo pronto!</h1>
                 <div className="mb-14 flex justify-center">
-                    <Image
-                        src={SignUpBusinessSuccess}
-                        alt="Obrigado"
-                    />
+                    <Image src={SignUpBusinessSuccess} alt="Obrigado" />
                 </div>
-                <p><strong>Sua conta está validada!</strong></p>
-                <p>Aproveite que já está autenticado e você pode começar a usar o Caramelo®!</p>
+                <p>
+                    <strong>Sua conta está validada!</strong>
+                </p>
+                <p>
+                    Aproveite que já está autenticado e você pode começar a usar
+                    o Caramelo®!
+                </p>
                 <Button
                     component={Link}
                     href="/poc"
@@ -26,7 +28,9 @@ export default function Page() {
                     my="xl"
                     fullWidth
                     color="black"
-                >Vamos lá</Button>
+                >
+                    Vamos lá
+                </Button>
             </div>
         </div>
     );

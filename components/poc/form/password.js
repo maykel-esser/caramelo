@@ -12,7 +12,9 @@ import { XMarkIcon, CheckIcon } from "@heroicons/react/24/outline";
  */
 function PasswordRequirement({ meets, label }) {
     return (
-        <div className={`flex items-center mt-2 text-sm ${meets ? "text-teal-500" : "text-red-500"}`}>
+        <div
+            className={`flex items-center mt-2 text-sm ${meets ? "text-teal-500" : "text-red-500"}`}
+        >
             {meets ? (
                 <CheckIcon className="w-3" />
             ) : (

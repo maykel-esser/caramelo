@@ -1,5 +1,5 @@
 import Link from "next/link";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 import { Avatar } from "@mantine/core";
 import { LineChart } from "@mantine/charts";
 import { NavigationCliente } from "components/poc/navigation";
@@ -19,11 +19,10 @@ import {
 import LogoAnimated from "/public/images/logos/logo-caramelo-lottie.json";
 
 export default function Page() {
-
     const logoOptions = {
         autoplay: true,
         loop: false,
-        animationData: LogoAnimated
+        animationData: LogoAnimated,
     };
 
     // Dummy Data for LineChart
