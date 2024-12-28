@@ -12,6 +12,7 @@
  * @see beforeAll in tests. We are calling the orchestrator to wait for all services to be up and running.
  */
 import retry from "async-retry";
+import database from "infra/database";
 
 /**
  * @function waitForAllServices
@@ -49,15 +50,10 @@ async function waitForWebServer() {
  *
  * @description Fetch the status page.
  *
- * @param {boolean} bail - If we should bail (abort) the request.
- * @param {number} tryNumber - The number of the attempt.
- *
  * @returns {Promise<void>}
  * @see waitForWebServer
  */
-async function fetchStatusPage(bail, tryNumber) {
-    console.log(`Attempt to fetch Status Page ${tryNumber}`);
-
+async function fetchStatusPage() {
     const response = await fetch("http://localhost:3000/api/v1/status");
 
     if (response.status !== 200) {
@@ -65,8 +61,14 @@ async function fetchStatusPage(bail, tryNumber) {
     }
 }
 
+async function clearDatabase() {
+    await database.query("DROP SCHEMA public cascade;");
+    await database.query("CREATE SCHEMA public;");
+}
+
 const orchestrator = {
     waitForAllServices,
+    clearDatabase,
 };
 
 export default orchestrator;
