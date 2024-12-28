@@ -1,9 +1,8 @@
-import database from "infra/database";
 import orchestrator from "tests/orchestrator.js";
 
 beforeAll(async () => {
     await orchestrator.waitForAllServices();
-    await cleanDatabase();
+    await orchestrator.clearDatabase();
 });
 
 describe("POST Migrations Endpoint", () => {
@@ -38,8 +37,3 @@ describe("POST Migrations Endpoint", () => {
         });
     });
 });
-
-async function cleanDatabase() {
-    await database.query("DROP SCHEMA public CASCADE;");
-    await database.query("CREATE SCHEMA public;");
-}
