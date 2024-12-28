@@ -56,8 +56,6 @@ async function waitForWebServer() {
  * @see waitForWebServer
  */
 async function fetchStatusPage(bail, tryNumber) {
-    console.log(`Attempt to fetch Status Page ${tryNumber}`);
-
     const response = await fetch("http://localhost:3000/api/v1/status");
 
     if (response.status !== 200) {
