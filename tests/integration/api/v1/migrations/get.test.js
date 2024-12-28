@@ -1,14 +1,13 @@
-import database from "infra/database";
 import orchestrator from "tests/orchestrator.js";
 
 beforeAll(async () => {
     await orchestrator.waitForAllServices();
-    await cleanDatabase();
+    await orchestrator.clearDatabase();
 });
 
 describe("GET Migrations Endpoint", () => {
     describe("Anonymous user", () => {
-        test("Running pending migrations", async () => {
+        test("Retrieving pending migrations", async () => {
             const response = await fetch(
                 "http://localhost:3000/api/v1/migrations",
             );
@@ -19,8 +18,3 @@ describe("GET Migrations Endpoint", () => {
         });
     });
 });
-
-async function cleanDatabase() {
-    await database.query("DROP SCHEMA public cascade;");
-    await database.query("CREATE SCHEMA public;");
-}
