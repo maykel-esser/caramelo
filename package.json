@@ -50,7 +50,8 @@
         "react-dom": "19.0.0",
         "react-imask": "7.6.1",
         "react-lottie": "1.2.10",
-        "recharts": "2.15.0"
+        "recharts": "2.15.0",
+        "swr": "2.3.0"
     },
     "devDependencies": {
         "@commitlint/cli": "19.6.1",
