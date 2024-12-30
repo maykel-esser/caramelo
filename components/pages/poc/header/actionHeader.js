@@ -2,7 +2,11 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 // Icons
-import { ChevronLeftIcon, PlusIcon } from "@heroicons/react/24/outline";
+import {
+    ChevronLeftIcon,
+    PlusIcon,
+    PencilSquareIcon,
+} from "@heroicons/react/24/outline";
 
 export default function ActionHeader(props) {
     let icon;
@@ -11,6 +15,9 @@ export default function ActionHeader(props) {
     switch (props.action) {
         case "add":
             icon = <PlusIcon className="w-6" />;
+            break;
+        case "edit":
+            icon = <PencilSquareIcon className="w-6" />;
             break;
     }
 
@@ -27,7 +34,11 @@ export default function ActionHeader(props) {
                 {props.title}
             </h1>
             {props.action ? (
-                <Link href={props.actionHref}>{icon}</Link>
+                props.actionHref ? (
+                    <Link href={props.actionHref}>{icon}</Link>
+                ) : (
+                    <button onClick={props.onActionClick}>{icon}</button>
+                )
             ) : (
                 <div className="w-6" />
             )}
