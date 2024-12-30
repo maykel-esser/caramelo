@@ -7,7 +7,6 @@ import {
     ChevronRightIcon,
     UsersIcon,
     TicketIcon,
-    ExclamationCircleIcon
 } from "@heroicons/react/24/outline";
 
 export default function Page() {
@@ -24,7 +23,11 @@ export default function Page() {
                 <section>
                     <div className="bg-white p-4 rounded-xl mb-8 flex items-center gap-4">
                         <TicketIcon className="w-20" />
-                        <p className="text-gray-500 text-sm">Os cartões são onde seus clientes guardarão os créditos de acordo com suas promoções. Você pode ter múltiplos cartões.</p>
+                        <p className="text-gray-500 text-sm">
+                            Os cartões são onde seus clientes guardarão os
+                            créditos de acordo com suas promoções. Você pode ter
+                            múltiplos cartões.
+                        </p>
                     </div>
                     <div className="flex justify-between items-center mb-4 p-4 bg-white rounded-xl">
                         <div>
