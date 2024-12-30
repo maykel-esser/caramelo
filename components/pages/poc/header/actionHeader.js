@@ -16,15 +16,21 @@ export default function ActionHeader(props) {
 
     return (
         <header className="flex items-center mb-8 pt-16 justify-between">
-            {props.backToPreviousPage && (
+            {props.backToPreviousPage ? (
                 <button onClick={() => router.back()}>
                     <ChevronLeftIcon className="w-6" />
                 </button>
+            ) : (
+                <div className="w-6" />
             )}
             <h1 className="text-lg font-bold flex-auto text-center">
                 {props.title}
             </h1>
-            {props.action && <Link href={props.actionHref}>{icon}</Link>}
+            {props.action ? (
+                <Link href={props.actionHref}>{icon}</Link>
+            ) : (
+                <div className="w-6" />
+            )}
         </header>
     );
 }
