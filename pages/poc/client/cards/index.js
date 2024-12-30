@@ -2,6 +2,9 @@ import NavigationMenu from "components/pages/poc/navigation";
 import ActionHeader from "components/pages/poc/header/actionHeader";
 import CardList from "components/pages/poc/cards/cardList";
 
+// Consts
+import { RESOURCE_STATUS } from "constants/status.constants";
+
 export default function Page() {
     return (
         <>
@@ -24,6 +27,14 @@ export default function Page() {
                         expiresIn="12 meses"
                         creditsGiven="48"
                         clientsUsing="23"
+                        status={RESOURCE_STATUS.ACTIVE}
+                    />
+                    <CardList
+                        title="A cada 10 serviços, ganhe um corte"
+                        expiresIn="12 meses"
+                        creditsGiven="48"
+                        clientsUsing="23"
+                        status={RESOURCE_STATUS.UNAVAILABLE}
                     />
                 </section>
             </main>
