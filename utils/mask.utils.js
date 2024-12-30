@@ -11,7 +11,7 @@ import IMask from "imask";
  */
 function mask(string, mask) {
     const maskOptions = {
-        mask: mask
+        mask: mask,
     };
 
     const masked = IMask.createMask(maskOptions);
