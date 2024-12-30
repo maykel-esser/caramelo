@@ -22,7 +22,7 @@ import {
 } from "@heroicons/react/24/solid";
 
 export default function Page() {
-    // Switch de demonstração
+    // Demos Switch
     const [isUser, setIsUser] = useState(true);
     const switchUser = <UserIcon className="w-4" />;
     const switchCompany = <BuildingStorefrontIcon className="w-4" />;

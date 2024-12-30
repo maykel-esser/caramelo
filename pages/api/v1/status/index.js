@@ -4,15 +4,12 @@ import { InternalServerError } from "infra/errors";
 /**
  * @function status
  * @author Maykel Esser
- *
  * @description This function is responsible for returning the status of the application.
  * - The updated_at field must contain the current date in ISO format.
  * - The dependencies field must contain the database field.
  * - The database field must contain the version, max_connections and used_connections fields.
- *
  * @param {*} req - The request object.
  * @param {*} res - The response object.
- *
  * @returns {Object} - Returns an object with the status of the application.
  */
 export default async function status(req, res) {

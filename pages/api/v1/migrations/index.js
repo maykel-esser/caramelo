@@ -5,12 +5,9 @@ import { resolve } from "node:path";
 /**
  * @function migrations
  * @author Maykel Esser
- *
  * @description This function is responsible for handling the migration of the database.
- *
  * @param {*} req - The request object.
  * @param {*} res - The response object.
- *
  * @returns {Array} - Returns an array with the migrations that were executed.
  */
 export default async function migrations(req, res) {

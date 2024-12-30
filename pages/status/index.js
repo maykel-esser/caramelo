@@ -1,11 +1,9 @@
 /**
  * @page Status page
  * @author Maykel Esser
- *
  * @description This page shows the status of all services.
  * It will show the status of the database, cache, and other services.
  * It will also show the history of incidents.
- *
  * @see This page is using SWR to fetch the data from the API.
  * @see The data is being fetched every 60 seconds.
  * @see The data is being deduped every 60 seconds.
@@ -57,9 +55,7 @@ export default function Page() {
 /**
  * @function fetchAPI
  * @author Maykel Esser
- *
  * @description Fetch the API data from the given key (url).
- *
  * @param {*} key - The url to fetch the data from.
  * @returns {Promise} - The fetched data.
  */
