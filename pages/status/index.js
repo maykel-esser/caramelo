@@ -39,12 +39,12 @@ export default function Page() {
     };
 
     return (
-        <main className="grid place-content-center text-center h-screen justify-items-center">
+        <main className="grid place-content-center text-center min-h-screen justify-items-center">
             <div className="flex items-center justify-center">
                 <Lottie options={logoOptions} height={95} width={95} />
                 <CheckCircleIcon className="w-20 h-20 text-green-400" />
             </div>
-            <h1 className="text-2xl font-bold">
+            <h1 className="text-2xl font-bold mb-5">
                 Todos os sistemas operacionais!
             </h1>
             <UpdatedAt isLoading={isLoading} data={data} />
