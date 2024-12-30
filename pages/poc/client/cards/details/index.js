@@ -81,7 +81,7 @@ export default function Page() {
             </main>
             <Drawer
                 opened={openedRemove}
-                size="35%"
+                size="290px"
                 onClose={closeRemove}
                 offset={8}
                 position="bottom"
@@ -115,7 +115,7 @@ export default function Page() {
             </Drawer>
             <Drawer
                 opened={openedEdit}
-                size="30%"
+                size="290px"
                 onClose={closeEdit}
                 offset={8}
                 position="bottom"
