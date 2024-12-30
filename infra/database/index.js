@@ -20,10 +20,11 @@ async function query(queryObject) {
 
         return result;
     } catch (error) {
+        console.error("Database error:");
         console.error(error);
         throw error;
     } finally {
-        await client.end();
+        await client?.end();
     }
 }
 
