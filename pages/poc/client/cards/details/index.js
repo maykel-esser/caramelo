@@ -89,13 +89,25 @@ export default function Page() {
                 overlayProps={{ backgroundOpacity: 0.5, blur: 4 }}
             >
                 <div className="text-center">
-                    <h1 className="text-2xl font-bold mb-4">Confirme sua ação</h1>
-                    <p>Você deseja desativar este cartão? Com isso, os atuais créditos dados a clientes serão perdidos.</p>
+                    <h1 className="text-2xl font-bold mb-4">
+                        Confirme sua ação
+                    </h1>
+                    <p>
+                        Você deseja desativar este cartão? Com isso, os atuais
+                        créditos dados a clientes serão perdidos.
+                    </p>
                     <p>
                         <strong>Esta ação não poderá ser desfeita.</strong>
                     </p>
                     <div className="mt-6">
-                        <Button size="lg" radius="md" fullWidth color="red" component={Link} href="/poc/client/cards">
+                        <Button
+                            size="lg"
+                            radius="md"
+                            fullWidth
+                            color="red"
+                            component={Link}
+                            href="/poc/client/cards"
+                        >
                             Desativar cartão
                         </Button>
                     </div>

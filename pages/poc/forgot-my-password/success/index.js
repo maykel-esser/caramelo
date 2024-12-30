@@ -6,18 +6,16 @@ import { Button } from "@mantine/core";
 import SignUpBusinessSuccess from "/public/images/signup/signup-business-success.png";
 
 export default function Page() {
-
     return (
         <div className="flex items-center justify-center min-h-screen p-10">
             <div className="w-full max-w-md text-center">
                 <h1 className="text-2xl font-bold mb-5">Tudo pronto!</h1>
                 <div className="mb-14 flex justify-center">
-                    <Image
-                        src={SignUpBusinessSuccess}
-                        alt="Obrigado"
-                    />
+                    <Image src={SignUpBusinessSuccess} alt="Obrigado" />
                 </div>
-                <p><strong>Você alterou sua senha!</strong></p>
+                <p>
+                    <strong>Você alterou sua senha!</strong>
+                </p>
                 <p>Aproveite que já está por aqui e faça o login novamente</p>
                 <Button
                     component={Link}
@@ -27,7 +25,9 @@ export default function Page() {
                     my="xl"
                     fullWidth
                     color="black"
-                >Vamos lá</Button>
+                >
+                    Vamos lá
+                </Button>
             </div>
         </div>
     );
