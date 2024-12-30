@@ -4,7 +4,6 @@ import "@mantine/core/styles.css";
 import "@mantine/charts/styles.css";
 import { MantineProvider } from "@mantine/core";
 import { AnimatePresence, motion } from "framer-motion";
-import { useRouter } from "next/router";
 
 export default function MyApp({ Component, pageProps, router }) {
     const [history, setHistory] = useState([]);
