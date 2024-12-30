@@ -1,37 +1,12 @@
 import Link from "next/link";
-import { useState } from "react";
 import { IMaskInput } from "react-imask";
-import {
-    TextInput,
-    Button,
-    PasswordInput,
-    Progress,
-    Popover,
-} from "@mantine/core";
-import { PasswordRequirement } from "components/pages/poc/form/password";
-import { getStrength, passwordRequirementsRules } from "utils/password.utils";
+import { TextInput, Button } from "@mantine/core";
+import { NewPasswordInput } from "components/pages/poc/form/password";
 
 // Icons
 import { PhoneIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
-    // State settings
-    const [passwordValue, setPasswordValue] = useState("");
-    const [popoverOpened, setPopoverOpened] = useState(false);
-
-    // Password meter
-    const requirements = passwordRequirementsRules();
-    const strength = getStrength(passwordValue);
-    const color = strength === 100 ? "teal" : strength > 50 ? "yellow" : "red";
-
-    const checks = requirements.map((requirement, index) => (
-        <PasswordRequirement
-            key={index}
-            label={requirement.label}
-            meets={requirement.re.test(passwordValue)}
-        />
-    ));
-
     return (
         <div className="flex items-center justify-center min-h-screen p-10">
             <div className="w-full max-w-md text-center">
@@ -67,43 +42,7 @@ export default function Page() {
                         />
                     </div>
                     <div className="mb-8">
-                        <Popover
-                            opened={popoverOpened}
-                            position="bottom"
-                            width="target"
-                            transitionProps={{ transition: "pop" }}
-                        >
-                            <Popover.Target>
-                                <div
-                                    onFocusCapture={() =>
-                                        setPopoverOpened(true)
-                                    }
-                                    onBlurCapture={() =>
-                                        setPopoverOpened(false)
-                                    }
-                                >
-                                    <PasswordInput
-                                        placeholder="Sua senha"
-                                        radius="md"
-                                        size="md"
-                                        onChange={(event) => {
-                                            setPasswordValue(
-                                                event.currentTarget.value,
-                                            );
-                                        }}
-                                    />
-                                </div>
-                            </Popover.Target>
-                            <Popover.Dropdown>
-                                <Progress
-                                    color={color}
-                                    value={strength}
-                                    size={5}
-                                    mb="xs"
-                                />
-                                {checks}
-                            </Popover.Dropdown>
-                        </Popover>
+                        <NewPasswordInput placeholder="Sua senha" />
                     </div>
                     <Button
                         variant="filled"
