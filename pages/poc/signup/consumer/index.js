@@ -8,7 +8,7 @@ import {
     Progress,
     Popover,
 } from "@mantine/core";
-import { PasswordRequirement } from "components/poc/form/password";
+import { PasswordRequirement } from "components/pages/poc/form/password";
 import { getStrength, passwordRequirementsRules } from "utils/password.utils";
 
 // Icons
@@ -113,7 +113,7 @@ export default function Page() {
                         type="submit"
                         color="black"
                         component={Link}
-                        href="/poc/cadastro/consumidor/token"
+                        href="/poc/signup/consumer/token"
                     >
                         Vamos nessa
                     </Button>

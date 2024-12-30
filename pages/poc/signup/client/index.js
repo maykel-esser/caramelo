@@ -70,7 +70,7 @@ export default function Page() {
                         type="submit"
                         color="black"
                         component={Link}
-                        href="/poc/cadastro/cliente/sucesso"
+                        href="/poc/signup/client/success"
                     >
                         Quero experimentar
                     </Button>

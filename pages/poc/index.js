@@ -99,14 +99,14 @@ export default function Page() {
                             type="submit"
                             color="black"
                             component={Link}
-                            href={isUser ? "/poc/consumidor" : "/poc/cliente"}
+                            href={isUser ? "/poc/consumer" : "/poc/client"}
                         >
                             Entrar
                         </Button>
                         <Divider label="ou" my="lg" />
                         <Button
                             component={Link}
-                            href="/poc/cadastro"
+                            href="/poc/signup"
                             variant="outline"
                             size="lg"
                             radius="md"

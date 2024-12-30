@@ -10,8 +10,8 @@ export default function Page() {
         <div className="flex items-center justify-center min-h-screen p-10">
             <div className="w-full max-w-md text-center">
                 <Link
-                    href="/poc/cadastro/cliente"
-                    className="no-underline border-2 border-gray-100 block rounded-lg p-8 hover:bg-gray-100 mb-5"
+                    href="/poc/signup/client"
+                    className="no-underline block rounded-xl p-8 mb-8 bg-white"
                 >
                     <Image
                         src={SignUpBusiness}
@@ -28,8 +28,8 @@ export default function Page() {
                     </div>
                 </Link>
                 <Link
-                    href="/poc/cadastro/consumidor"
-                    className="no-underline border-2 border-gray-100 block rounded-lg p-8 hover:bg-gray-100"
+                    href="/poc/signup/consumer"
+                    className="no-underline block rounded-xl p-8 bg-white"
                 >
                     <Image
                         src={SignUpUser}
