@@ -16,14 +16,14 @@ describe("formatDate", () => {
     });
 
     it("Should throw an error if no date is provided", () => {
-        expect(() => formatDate({})).toThrowError(
+        expect(() => formatDate({})).toThrow(
             "The 'date' parameter is required.",
         );
     });
 
     it("Should throw an error for an invalid date", () => {
         const options = { date: "invalid-date", format: "DD/MM/YYYY" };
-        expect(() => formatDate(options)).toThrowError(
+        expect(() => formatDate(options)).toThrow(
             "Invalid date provided.",
         );
     });
