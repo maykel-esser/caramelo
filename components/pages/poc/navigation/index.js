@@ -38,7 +38,7 @@ export default function NavigationMenu(props) {
                         label="Clientes"
                     />
                     <NavigationMenuItem
-                        href="/poc/client/profile"
+                        href="/poc/client/business-profile"
                         icon={BuildingStorefrontIcon}
                         label="Perfil"
                     />
