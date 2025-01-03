@@ -32,7 +32,7 @@ export default function Page() {
                         type="submit"
                         color="black"
                         component={Link}
-                        href="/poc/cadastro/consumidor/sucesso"
+                        href="/poc/signup/consumer/success"
                     >
                         Validar
                     </Button>

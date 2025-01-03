@@ -17,12 +17,12 @@ export default function Page() {
                     Eu quero usar para minha empresa
                 </h1>
                 <p className="mb-8">
-                    Se você é interessado em ser testar nosso app, junte-se a
-                    nós! Tenha acesso gratuito ao Caramelo® por 6 meses e
-                    compartilhe seus valiosos feedbacks. Preencha o formulário
-                    abaixo, e faremos contato em breve. Seja parte dessa
-                    inovação e transforme a experiência de fidelidade para seus
-                    clientes!
+                    Obrigado pelo interesse no Caramelo®! Estamos em fase
+                    inicial, junte-se a nós! Tenha acesso gratuito ao Caramelo®
+                    por 6 meses e compartilhe seus valiosos feedbacks. Preencha
+                    o formulário abaixo, e faremos contato em breve. Seja parte
+                    dessa inovação e transforme a experiência de fidelidade para
+                    seus clientes!
                 </p>
                 <form className="text-left">
                     <div className="mb-3">
@@ -70,7 +70,7 @@ export default function Page() {
                         type="submit"
                         color="black"
                         component={Link}
-                        href="/poc/cadastro/cliente/sucesso"
+                        href="/poc/signup/client/success"
                     >
                         Quero experimentar
                     </Button>

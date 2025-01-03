@@ -4,9 +4,7 @@ import { CheckCircleIcon } from "@heroicons/react/24/outline";
 /**
  * @function HistoryLog
  * @author Maykel Esser
- *
  * @description History log component.
- *
  * @return {JSX.Element} - Full status table component with all needed data
  */
 export default function HistoryLog() {

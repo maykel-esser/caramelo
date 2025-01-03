@@ -1,11 +1,9 @@
 /**
  * @page Status page
  * @author Maykel Esser
- *
  * @description This page shows the status of all services.
  * It will show the status of the database, cache, and other services.
  * It will also show the history of incidents.
- *
  * @see This page is using SWR to fetch the data from the API.
  * @see The data is being fetched every 60 seconds.
  * @see The data is being deduped every 60 seconds.
@@ -39,12 +37,12 @@ export default function Page() {
     };
 
     return (
-        <main className="grid place-content-center text-center h-screen justify-items-center">
+        <main className="grid place-content-center text-center min-h-screen justify-items-center">
             <div className="flex items-center justify-center">
                 <Lottie options={logoOptions} height={95} width={95} />
                 <CheckCircleIcon className="w-20 h-20 text-green-400" />
             </div>
-            <h1 className="text-2xl font-bold">
+            <h1 className="text-2xl font-bold mb-5">
                 Todos os sistemas operacionais!
             </h1>
             <UpdatedAt isLoading={isLoading} data={data} />
@@ -57,9 +55,7 @@ export default function Page() {
 /**
  * @function fetchAPI
  * @author Maykel Esser
- *
  * @description Fetch the API data from the given key (url).
- *
  * @param {*} key - The url to fetch the data from.
  * @returns {Promise} - The fetched data.
  */
