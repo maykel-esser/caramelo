@@ -6,12 +6,12 @@ describe("getStrength", () => {
         expect(strength).toBe(10);
     });
 
-    it("Should return a score -50 for a weak password", () => {
+    it("Should return a score < 50 for a weak password", () => {
         const strength = getStrength("12345");
         expect(strength).toBeLessThan(50);
     });
 
-    it("Should return strength between 50 and 100 for a medium password", () => {
+    it("Should return strength > 50 and < 100 for a medium password", () => {
         const strength = getStrength("12345aA");
         expect(strength).toBeGreaterThan(50);
         expect(strength).toBeLessThan(100);

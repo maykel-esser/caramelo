@@ -23,9 +23,7 @@ describe("formatDate", () => {
 
     it("Should throw an error for an invalid date", () => {
         const options = { date: "invalid-date", format: "DD/MM/YYYY" };
-        expect(() => formatDate(options)).toThrow(
-            "Invalid date provided.",
-        );
+        expect(() => formatDate(options)).toThrow("Invalid date provided.");
     });
 
     it("Should format a valid date correctly using the default format when no format is provided", () => {
