@@ -2,9 +2,29 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function NavigationMenuItem(props) {
-    // Set active button
+    // Get current path
     const pathname = usePathname();
-    const isActive = pathname === props.href;
+
+    // Define the base paths
+    const basePaths = ["/poc/client", "/poc/consumer"];
+
+    // Remove the matching base path from pathname and href
+    const cleanPath = (path) => {
+        for (const basePath of basePaths) {
+            if (path.startsWith(basePath)) {
+                return path.replace(basePath, "") || "/"; // Ensure root "/" if nothing remains
+            }
+        }
+        return path; // If no base path matches, return the original path
+    };
+
+    const cleanedPathname = cleanPath(pathname);
+    const cleanedHref = cleanPath(props.href);
+
+    // Check if active based on cleaned paths
+    const isActive =
+        cleanedPathname === cleanedHref ||
+        cleanedPathname.startsWith(`${cleanedHref}/`);
 
     return (
         <li
