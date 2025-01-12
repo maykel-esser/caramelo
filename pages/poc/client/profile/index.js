@@ -12,6 +12,7 @@ import {
     BuildingStorefrontIcon,
     LockClosedIcon,
     UserIcon,
+    ShieldCheckIcon,
 } from "@heroicons/react/24/outline";
 
 export default function Page() {
@@ -34,7 +35,7 @@ export default function Page() {
                                 size="xl"
                             />
                             <div className="absolute bottom-4 right-3 bg-gray-100 text-gray-600 shadow-md rounded-full p-2 transform translate-x-1/2 translate-y-1/2">
-                                <Link href="/poc/client/profile/edit-profile">
+                                <Link href="/poc/client/profile/personal-data">
                                     <PencilIcon className="w-5 h-5" />
                                 </Link>
                             </div>
@@ -58,6 +59,12 @@ export default function Page() {
                             href="/poc/client/profile/business-profile"
                             title="Editar Estabelecimento"
                             icon={BuildingStorefrontIcon}
+                            seeDetailsIcon={true}
+                        />
+                        <ListItem
+                            href="/poc/client/profile/privacy"
+                            title="Privacidade"
+                            icon={ShieldCheckIcon}
                             seeDetailsIcon={true}
                         />
                         <ListItem
