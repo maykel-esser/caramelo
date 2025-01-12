@@ -25,7 +25,7 @@ export default function Page() {
                     seus clientes!
                 </p>
                 <form className="text-left">
-                    <div className="mb-3">
+                    <div className="mb-4">
                         <TextInput
                             placeholder="Nome da empresa"
                             required
@@ -33,7 +33,7 @@ export default function Page() {
                             radius="md"
                         />
                     </div>
-                    <div className="mb-3">
+                    <div className="mb-4">
                         <TextInput
                             placeholder="Digite um e-mail para contato"
                             required
@@ -42,7 +42,7 @@ export default function Page() {
                             leftSection={<EnvelopeIcon className="w-5" />}
                         />
                     </div>
-                    <div className="mb-3">
+                    <div className="mb-4">
                         <TextInput
                             placeholder="Digite um telefone/whatsapp para contato"
                             required

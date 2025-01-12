@@ -17,7 +17,7 @@ export default function Page() {
                     um código de recuperação de senha para lá em um SMS:
                 </p>
                 <form>
-                    <div className="mb-3">
+                    <div className="mb-4">
                         <TextInput
                             leftSection={<PhoneIcon className="w-5" />}
                             placeholder="Seu telefone"

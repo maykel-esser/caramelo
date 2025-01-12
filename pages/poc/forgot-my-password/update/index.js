@@ -8,7 +8,7 @@ export default function Page() {
             <div className="w-full max-w-md text-center">
                 <h1 className="text-2xl font-bold mb-5">Crie uma nova senha</h1>
                 <form className="text-left">
-                    <div className="mb-3">
+                    <div className="mb-4">
                         <NewPasswordInput placeholder="Digite a nova senha" />
                     </div>
                     <div className="mb-8">

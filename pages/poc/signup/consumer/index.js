@@ -22,7 +22,7 @@ export default function Page() {
                     sua conta criada anteriormente!
                 </p>
                 <form className="text-left">
-                    <div className="mb-3">
+                    <div className="mb-4">
                         <TextInput
                             placeholder="Seu nome"
                             required
@@ -30,7 +30,7 @@ export default function Page() {
                             radius="md"
                         />
                     </div>
-                    <div className="mb-3">
+                    <div className="mb-4">
                         <TextInput
                             placeholder="Digite um telefone"
                             required
