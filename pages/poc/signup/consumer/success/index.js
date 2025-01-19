@@ -29,7 +29,7 @@ export default function Page() {
                     fullWidth
                     color="black"
                 >
-                    Vamos lá
+                    Vamos nessa
                 </Button>
             </div>
         </div>

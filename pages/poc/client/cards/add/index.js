@@ -111,7 +111,7 @@ export default function Page() {
                             component={Link}
                             href="/poc/client/cards"
                         >
-                            Cadastrar cartão
+                            Cadastrar
                         </Button>
                     </form>
                 </section>

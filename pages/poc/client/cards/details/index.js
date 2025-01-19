@@ -75,7 +75,7 @@ export default function Page() {
                         color="red"
                         onClick={openRemove}
                     >
-                        Desativar cartão
+                        Desativar
                     </Button>
                 </section>
             </main>
@@ -108,7 +108,7 @@ export default function Page() {
                             component={Link}
                             href="/poc/client/cards"
                         >
-                            Desativar cartão
+                            Desativar
                         </Button>
                     </div>
                 </div>
@@ -142,7 +142,7 @@ export default function Page() {
                                 fullWidth
                                 color="black"
                             >
-                                Salvar alterações
+                                Atualizar dados
                             </Button>
                         </div>
                     </form>
