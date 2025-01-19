@@ -23,7 +23,9 @@ export default function ActionHeader(props) {
         case "notification":
             icon = (
                 <div className="relative">
-                    <span className="absolute inset-0 object-right-top -mr-6 bg-red-500 text-center text-white w-3 h-3 rounded-full"></span>
+                    {!props.read && (
+                        <span className="absolute inset-0 object-right-top -mr-6 bg-red-500 text-center text-white w-3 h-3 rounded-full"></span>
+                    )}
                     <BellIcon className="w-6" />
                 </div>
             );
