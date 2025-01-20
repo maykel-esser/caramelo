@@ -5,8 +5,6 @@ import { useDisclosure } from "@mantine/hooks";
 import { Button } from "@mantine/core";
 
 export default function Page() {
-    const [openedRemove, { open: openRemove, close: closeRemove }] =
-        useDisclosure(false);
 
     return (
         <>
