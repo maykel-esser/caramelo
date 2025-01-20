@@ -29,7 +29,7 @@ export default function Page() {
                         <Button
                             variant="filled"
                             fullWidth
-                            size="md"
+                            size="lg"
                             radius="md"
                             type="submit"
                             color="black"

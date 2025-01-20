@@ -20,7 +20,7 @@ export default function Page() {
                 <Button
                     component={Link}
                     href="/poc"
-                    size="md"
+                    size="lg"
                     radius="md"
                     my="xl"
                     fullWidth
