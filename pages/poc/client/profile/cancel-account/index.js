@@ -78,7 +78,8 @@ export default function Page() {
                             incluindo registro de créditos.;
                         </li>
                         <li>
-                            Você não poderá completar o cancelamento caso você seja o único usuário gestor de um estabelecimento;
+                            Você não poderá completar o cancelamento caso você
+                            seja o único usuário gestor de um estabelecimento;
                         </li>
                         <li>Nenhum reembolso será efetuado.</li>
                     </ul>

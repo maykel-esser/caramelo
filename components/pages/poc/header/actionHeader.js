@@ -7,7 +7,7 @@ import {
     PlusIcon,
     PencilSquareIcon,
     BellIcon,
-    ArchiveBoxXMarkIcon
+    ArchiveBoxXMarkIcon,
 } from "@heroicons/react/24/outline";
 
 export default function ActionHeader(props) {

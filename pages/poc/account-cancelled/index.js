@@ -4,7 +4,6 @@ import Image from "next/image";
 import CancelAccountImage from "public/images/cancel-account/account-cancelled.png";
 
 export default function Page() {
-
     return (
         <>
             <div className="flex items-center justify-center min-h-screen p-10">
@@ -19,7 +18,10 @@ export default function Page() {
                     <h1 className="text-2xl font-bold mb-4">
                         Sua conta foi removida com sucesso
                     </h1>
-                    <p>Agradecemos pelo tempo que passamos juntos. Esperamos que tenha sido uma experiência agradável no Caramelo®!</p>
+                    <p>
+                        Agradecemos pelo tempo que passamos juntos. Esperamos
+                        que tenha sido uma experiência agradável no Caramelo®!
+                    </p>
                 </section>
             </div>
         </>

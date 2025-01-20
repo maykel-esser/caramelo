@@ -9,14 +9,21 @@ import { Button, Drawer } from "@mantine/core";
 import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
-    const [openedClearNotifications, { open: openClearNotifications, close: closeClearNotifications }] =
-        useDisclosure(false);
+    const [
+        openedClearNotifications,
+        { open: openClearNotifications, close: closeClearNotifications },
+    ] = useDisclosure(false);
 
     return (
         <>
             <NavigationMenu source="client" />
             <main className="px-4 pb-32">
-                <ActionHeader title="Notificações" backToPreviousPage={true} action="clear" onActionClick={openClearNotifications} />
+                <ActionHeader
+                    title="Notificações"
+                    backToPreviousPage={true}
+                    action="clear"
+                    onActionClick={openClearNotifications}
+                />
                 <section>
                     <ul>
                         <NotificationItem
@@ -59,9 +66,7 @@ export default function Page() {
                     <h1 className="text-2xl font-bold mb-4">
                         Confirme sua ação
                     </h1>
-                    <p>
-                        Limpar todas as notificações?
-                    </p>
+                    <p>Limpar todas as notificações?</p>
                     <p>
                         <strong>Esta ação não poderá ser desfeita.</strong>
                     </p>

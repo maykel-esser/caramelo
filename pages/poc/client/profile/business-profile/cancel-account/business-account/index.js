@@ -1,11 +1,9 @@
 import Link from "next/link";
 import NavigationMenu from "components/pages/poc/navigation";
 import ActionHeader from "components/pages/poc/header/actionHeader";
-import { useDisclosure } from "@mantine/hooks";
 import { Button } from "@mantine/core";
 
 export default function Page() {
-
     return (
         <>
             <NavigationMenu source="client" />
@@ -16,7 +14,9 @@ export default function Page() {
                 />
                 <section>
                     <p className="mb-8 text-center">
-                        Para contas de negócio, o encerramento de contas é feito estritamente através do suporte. Entre em contato no botão abaixo para continuar.
+                        Para contas de negócio, o encerramento de contas é feito
+                        estritamente através do suporte. Entre em contato no
+                        botão abaixo para continuar.
                     </p>
                     <Button
                         variant="filled"
