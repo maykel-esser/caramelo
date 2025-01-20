@@ -7,6 +7,7 @@ import {
     PlusIcon,
     PencilSquareIcon,
     BellIcon,
+    ArchiveBoxXMarkIcon
 } from "@heroicons/react/24/outline";
 
 export default function ActionHeader(props) {
@@ -29,6 +30,9 @@ export default function ActionHeader(props) {
                     <BellIcon className="w-6" />
                 </div>
             );
+            break;
+        case "clear":
+            icon = <ArchiveBoxXMarkIcon className="w-6" />;
             break;
     }
 

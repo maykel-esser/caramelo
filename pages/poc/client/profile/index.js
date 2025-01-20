@@ -13,6 +13,7 @@ import {
     LockClosedIcon,
     UserIcon,
     ShieldCheckIcon,
+    ArchiveBoxXMarkIcon,
 } from "@heroicons/react/24/outline";
 
 export default function Page() {
@@ -71,6 +72,12 @@ export default function Page() {
                             href="/poc/client/profile/help"
                             title="Ajuda"
                             icon={QuestionMarkCircleIcon}
+                            seeDetailsIcon={true}
+                        />
+                        <ListItem
+                            href="/poc/client/profile/cancel-account"
+                            title="Cancelar minha conta"
+                            icon={ArchiveBoxXMarkIcon}
                             seeDetailsIcon={true}
                         />
                         <ListItem
