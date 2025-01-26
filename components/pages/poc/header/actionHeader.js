@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { Indicator } from "@mantine/core";
 
 // Icons
 import {
@@ -23,12 +24,9 @@ export default function ActionHeader(props) {
             break;
         case "notification":
             icon = (
-                <div className="relative">
-                    {!props.read && (
-                        <span className="absolute inset-0 object-right-top -mr-6 bg-red-500 text-center text-white w-3 h-3 rounded-full"></span>
-                    )}
+                <Indicator color="red" offset={5} disabled={props.read}>
                     <BellIcon className="w-6" />
-                </div>
+                </Indicator>
             );
             break;
         case "clear":
