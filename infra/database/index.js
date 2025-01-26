@@ -1,4 +1,5 @@
 import { Client } from "pg";
+import { ServiceError } from "infra/errors";
 
 /**
  * @function query
@@ -15,14 +16,14 @@ async function query(queryObject) {
 
     try {
         client = await getNewClient();
-
         const result = await client.query(queryObject);
-
         return result;
     } catch (error) {
-        console.error("Database error:");
-        console.error(error);
-        throw error;
+        const serviceErrorObject = new ServiceError({
+            message: "Database or query error.",
+            cause: error,
+        });
+        throw serviceErrorObject;
     } finally {
         await client?.end();
     }
@@ -48,7 +49,6 @@ async function getNewClient() {
     });
 
     await client.connect();
-
     return client;
 }
 
