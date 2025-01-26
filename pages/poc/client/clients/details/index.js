@@ -8,7 +8,7 @@ import { mask } from "utils/mask.utils";
 import { IMaskInput } from "react-imask";
 
 // Icons
-import { ClockIcon, TrashIcon, ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
+import { ClockIcon, TrashIcon, ChevronDownIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
     const [openedRemove, { open: openRemove, close: closeRemove }] =
