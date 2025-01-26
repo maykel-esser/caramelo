@@ -31,9 +31,9 @@ export default function Page() {
                     <div className="flex flex-col items-center justify-center text-center font-bold mb-4">
                         <div className="relative mb-4">
                             <Avatar
-                                src="https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250"
-                                alt="Maykel Esser"
+                                name="Maykel Esser"
                                 size="xl"
+                                color="initials"
                             />
                             <div className="absolute bottom-4 right-3 bg-gray-100 text-gray-600 shadow-md rounded-full p-2 transform translate-x-1/2 translate-y-1/2">
                                 <Link href="/poc/client/profile/personal-data">
