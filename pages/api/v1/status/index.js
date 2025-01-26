@@ -22,7 +22,6 @@ export default router.handler(controller.errorHandlers);
  * @returns {Object} - Returns an object with the status of the application.
  */
 async function getHandler(req, res) {
-
     const updatedAt = new Date().toISOString();
     const serverVersion = await database.query("SHOW server_version;");
     const maxConnections = await database.query("SHOW max_connections;");

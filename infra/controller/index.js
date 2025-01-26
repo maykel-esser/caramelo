@@ -18,8 +18,8 @@ function onErrorHandler(error, req, res) {
 const controller = {
     errorHandlers: {
         onNoMatch: onNoMatchHandler,
-        onError: onErrorHandler
-    }
-}
+        onError: onErrorHandler,
+    },
+};
 
 export default controller;

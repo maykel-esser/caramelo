@@ -29,7 +29,6 @@ const defaultMigrationOptions = {
  * @returns {Array} - Returns an array with the migrations that were executed.
  */
 async function getHandler(req, res) {
-
     let dbClient;
 
     try {
@@ -61,7 +60,6 @@ async function getHandler(req, res) {
  * @returns {Array} - Returns an array with the migrations that were executed.
  */
 async function postHandler(req, res) {
-
     let dbClient;
 
     try {
@@ -79,7 +77,6 @@ async function postHandler(req, res) {
         }
 
         return res.status(200).json(migratedMigrations);
-
     } finally {
         await dbClient.end();
     }
