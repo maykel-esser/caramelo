@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Avatar } from "@mantine/core";
+import { mask } from "utils/mask.utils";
 
 // Consts
 import { RESOURCE_STATUS } from "constants/status.constants";
@@ -7,14 +8,14 @@ import { RESOURCE_STATUS } from "constants/status.constants";
 // Icons
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
-export default function cardList(props) {
+export default function userList(props) {
     return (
-        <Link href="/poc/client/profile/business-profile/users/details">
+        <Link href={props.href}>
             <div className="flex justify-between items-center mb-4 p-4 bg-white rounded-xl">
                 <div className="flex items-center gap-4">
                     <Avatar
-                        key="Maykel Esser"
-                        name="Maykel Esser"
+                        key={props.name}
+                        name={props.name}
                         color="initials"
                         size="md"
                     />
@@ -29,6 +30,11 @@ export default function cardList(props) {
                         >
                             {props.name}
                         </h2>
+                        {props.phone && (
+                            <p className="text-sm">
+                                {mask(props.phone, "(00) 00000-0000")}
+                            </p>
+                        )}
                         {props.status === RESOURCE_STATUS.UNAVAILABLE && (
                             <p className="text-red-500 text-sm font-bold">
                                 Usuário desativado
