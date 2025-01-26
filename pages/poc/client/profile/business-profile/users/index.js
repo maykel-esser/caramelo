@@ -13,6 +13,8 @@ export default function Page() {
                 <ActionHeader
                     title="Lista de usuários"
                     backToPreviousPage={true}
+                    action="add"
+                    actionHref="/poc/client/profile/business-profile/users/add"
                 />
                 <section>
                     <ul>
