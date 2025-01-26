@@ -30,7 +30,7 @@ export default function Page() {
                         status={RESOURCE_STATUS.ACTIVE}
                     />
                     <CardList
-                        title="A cada 10 serviços, ganhe um corte"
+                        title="A cada 10 cervejas, ganhe uma"
                         expiresIn="12 meses"
                         creditsGiven="48"
                         clientsUsing="23"
