@@ -8,7 +8,7 @@ import { RESOURCE_STATUS } from "constants/status.constants";
 // Icons
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
 
-export default function userList(props) {
+export default function UserList(props) {
     return (
         <Link href={props.href}>
             <div className="flex justify-between items-center mb-4 p-4 bg-white rounded-xl">

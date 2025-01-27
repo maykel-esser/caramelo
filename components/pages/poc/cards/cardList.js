@@ -10,7 +10,7 @@ import {
     TicketIcon,
 } from "@heroicons/react/24/outline";
 
-export default function cardList(props) {
+export default function CardList(props) {
     return (
         <Link href="/poc/client/cards/details">
             <div className="flex justify-between items-center mb-4 p-4 bg-white rounded-xl">

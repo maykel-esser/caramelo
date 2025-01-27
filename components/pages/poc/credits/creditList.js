@@ -7,9 +7,11 @@ import { Button, Drawer } from "@mantine/core";
 // Icons
 import { XMarkIcon, CheckIcon, ClockIcon } from "@heroicons/react/24/outline";
 
-export default function creditList(props) {
-    const [openedRejectCredit, { open: openRejectCredit, close: closeRejectCredit }] =
-        useDisclosure(false);
+export default function CreditList(props) {
+    const [
+        openedRejectCredit,
+        { open: openRejectCredit, close: closeRejectCredit },
+    ] = useDisclosure(false);
 
     return (
         <>
@@ -31,7 +33,10 @@ export default function creditList(props) {
                     <Link href="/poc/client/release">
                         <CheckIcon className="w-8 h-8 mb-4 text-teal-500" />
                     </Link>
-                    <XMarkIcon className="w-8 h-8 text-red-500" onClick={openRejectCredit} />
+                    <XMarkIcon
+                        className="w-8 h-8 text-red-500"
+                        onClick={openRejectCredit}
+                    />
                 </div>
             </div>
             <Drawer
@@ -47,9 +52,7 @@ export default function creditList(props) {
                     <h1 className="text-2xl font-bold mb-4">
                         Confirme sua ação
                     </h1>
-                    <p>
-                        Você deseja rejeitar esse crédito?
-                    </p>
+                    <p>Você deseja rejeitar esse crédito?</p>
                     <p>
                         <strong>Esta ação não poderá ser desfeita.</strong>
                     </p>
