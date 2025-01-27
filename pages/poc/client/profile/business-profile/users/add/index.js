@@ -9,7 +9,6 @@ import { Button, TextInput } from "@mantine/core";
 import { ExclamationCircleIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
-
     return (
         <>
             <NavigationMenu source="client" />
@@ -22,7 +21,11 @@ export default function Page() {
                     <div className="p-4 bg-white rounded-xl mb-8 flex gap-4 items-start">
                         <ExclamationCircleIcon className="w-36 flex-grow" />
                         <div className="text-sm">
-                            <p>Atenção: Não é necessário cadastrar uma senha. Uma senha temporária será enviada por SMS no telefone de cadastro.</p>
+                            <p>
+                                Atenção: Não é necessário cadastrar uma senha.
+                                Uma senha temporária será enviada por SMS no
+                                telefone de cadastro.
+                            </p>
                         </div>
                     </div>
                     <form>
