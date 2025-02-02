@@ -10,11 +10,10 @@ import {
     SquaresPlusIcon,
     UsersIcon as UsersOutlineIcon,
     BuildingStorefrontIcon,
-    UserCircleIcon
+    UserCircleIcon,
 } from "@heroicons/react/24/outline";
 
 export default function NavigationMenu(props) {
-
     return (
         <nav className="fixed bottom-0 bg-white w-full px-4 pb-8 pt-6 z-50 shadow-[0_-10px_10px_rgba(0,0,0,0.01)]">
             <ul className="flex justify-around items-center">

@@ -9,7 +9,6 @@ import { PencilIcon } from "@heroicons/react/24/solid";
 import {
     ArrowRightEndOnRectangleIcon,
     QuestionMarkCircleIcon,
-    BuildingStorefrontIcon,
     LockClosedIcon,
     UserIcon,
     ShieldCheckIcon,

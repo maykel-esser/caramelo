@@ -4,12 +4,9 @@ import NavigationMenu from "components/pages/poc/navigation";
 import { Avatar, Badge } from "@mantine/core";
 
 // Icons
-import {
-    MapPinIcon
-} from "@heroicons/react/24/outline";
+import { MapPinIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
-
     return (
         <>
             <NavigationMenu source="consumer" />
@@ -19,7 +16,9 @@ export default function Page() {
                     <div className="flex justify-between items-center mb-4">
                         <div>
                             <h2 className="font-bold">Quase lá</h2>
-                            <p className="text-sm">Falta pouco pra fechar estes!</p>
+                            <p className="text-sm">
+                                Falta pouco pra fechar estes!
+                            </p>
                         </div>
                         <Link
                             href="/poc/customer/credits"
@@ -37,8 +36,12 @@ export default function Page() {
                                 size="md"
                             />
                             <div>
-                                <p className="text-xs font-bold">Wiegand Barber Shop</p>
-                                <p className="text-xs">A cada 10 cortes, ganhe um</p>
+                                <p className="text-xs font-bold">
+                                    Wiegand Barber Shop
+                                </p>
+                                <p className="text-xs">
+                                    A cada 10 cortes, ganhe um
+                                </p>
                             </div>
                             <div className="text-center ml-auto">
                                 <p className="text-xs">Faltam</p>
@@ -55,8 +58,12 @@ export default function Page() {
                                 size="md"
                             />
                             <div>
-                                <p className="text-xs font-bold">Luke Petshop</p>
-                                <p className="text-xs">A cada 10 banhos, ganhe um</p>
+                                <p className="text-xs font-bold">
+                                    Luke Petshop
+                                </p>
+                                <p className="text-xs">
+                                    A cada 10 banhos, ganhe um
+                                </p>
                             </div>
                             <div className="text-center ml-auto">
                                 <p className="text-xs">Faltam</p>
@@ -69,7 +76,9 @@ export default function Page() {
                     <div className="flex justify-between items-center mb-4">
                         <div>
                             <h2 className="font-bold">Lugares próximos</h2>
-                            <p className="text-sm">Estes aqui aceitam Caramelo®</p>
+                            <p className="text-sm">
+                                Estes aqui aceitam Caramelo®
+                            </p>
                         </div>
                         <Link
                             href="/poc/customer/explore"
@@ -87,9 +96,16 @@ export default function Page() {
                                 size="md"
                             />
                             <div>
-                                <Badge color="black" size="xs" className="mb-2">Petshop</Badge>
-                                <p className="text-xs font-bold">Luke Petshop</p>
-                                <p className="text-xs">Estrada Guilherme Weigert 2245 - Santa Cândida</p>
+                                <Badge color="black" size="xs" className="mb-2">
+                                    Petshop
+                                </Badge>
+                                <p className="text-xs font-bold">
+                                    Luke Petshop
+                                </p>
+                                <p className="text-xs">
+                                    Estrada Guilherme Weigert 2245 - Santa
+                                    Cândida
+                                </p>
                             </div>
                             <div className="text-center ml-auto flex gap-2 items-center">
                                 <MapPinIcon className="w-5 text-gray-400" />
@@ -106,9 +122,13 @@ export default function Page() {
                                 size="md"
                             />
                             <div>
-                                <Badge color="black" size="xs" className="mb-2">Pizzaria</Badge>
+                                <Badge color="black" size="xs" className="mb-2">
+                                    Pizzaria
+                                </Badge>
                                 <p className="text-xs font-bold">Grano Vivo</p>
-                                <p className="text-xs">Av. Paraná 3301 - Bacacheri</p>
+                                <p className="text-xs">
+                                    Av. Paraná 3301 - Bacacheri
+                                </p>
                             </div>
                             <div className="text-center ml-auto flex gap-2 items-center">
                                 <MapPinIcon className="w-5 text-gray-400" />
@@ -125,9 +145,15 @@ export default function Page() {
                                 size="md"
                             />
                             <div>
-                                <Badge color="black" size="xs" className="mb-2">Petshop</Badge>
-                                <p className="text-xs font-bold">Wiegand Barber Shop</p>
-                                <p className="text-xs">Av. Anita Garibaldi, 1928 - Barreirinha</p>
+                                <Badge color="black" size="xs" className="mb-2">
+                                    Petshop
+                                </Badge>
+                                <p className="text-xs font-bold">
+                                    Wiegand Barber Shop
+                                </p>
+                                <p className="text-xs">
+                                    Av. Anita Garibaldi, 1928 - Barreirinha
+                                </p>
                             </div>
                             <div className="text-center ml-auto flex gap-2 items-center">
                                 <MapPinIcon className="w-5 text-gray-400" />
