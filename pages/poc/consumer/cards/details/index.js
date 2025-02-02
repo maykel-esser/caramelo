@@ -1,7 +1,7 @@
 import NavigationMenu from "components/pages/poc/navigation";
 import ActionHeader from "components/pages/poc/header/actionHeader";
 import ClientUserCard from "components/pages/poc/credits/clientUserCard";
-import { Badge } from "@mantine/core";
+import { Avatar, Badge } from "@mantine/core";
 
 // Icons
 import {
@@ -76,32 +76,40 @@ export default function Page() {
             <main className="px-4 pb-32">
                 <ActionHeader title="Cartões" backToPreviousPage={true} />
                 <section>
-                    <div>
-                        <h2 className="text-lg font-bold">
-                            Wiegand Barber Shop
-                        </h2>
-                        <p className="mb-2">
-                            Av. Anita Garibaldi, 1928 - Barreirinha
-                        </p>
-                        <div className="flex gap-2 items-center mb-8 pb-8 border-b">
-                            <Badge
-                                radius="sm"
-                                color="black"
-                                size="lg"
-                                leftSection={
-                                    <BuildingStorefrontIcon className="w-4" />
-                                }
-                            >
-                                Barbearia
-                            </Badge>
-                            <Badge
-                                radius="sm"
-                                color="black"
-                                size="lg"
-                                leftSection={<MapPinIcon className="w-4" />}
-                            >
-                                3.5km
-                            </Badge>
+                    <div className="flex gap-4">
+                        <Avatar
+                            key="Wiegand Barber Shop"
+                            name="Wiegand Barber Shop"
+                            color="initials"
+                            size="lg"
+                        />
+                        <div>
+                            <h2 className="text-lg font-bold">
+                                Wiegand Barber Shop
+                            </h2>
+                            <p className="mb-2">
+                                Av. Anita Garibaldi, 1928 - Barreirinha
+                            </p>
+                            <div className="flex gap-2 items-center mb-8 pb-8 border-b">
+                                <Badge
+                                    radius="sm"
+                                    color="black"
+                                    size="lg"
+                                    leftSection={
+                                        <BuildingStorefrontIcon className="w-4" />
+                                    }
+                                >
+                                    Barbearia
+                                </Badge>
+                                <Badge
+                                    radius="sm"
+                                    color="black"
+                                    size="lg"
+                                    leftSection={<MapPinIcon className="w-4" />}
+                                >
+                                    3.5km
+                                </Badge>
+                            </div>
                         </div>
                     </div>
                     <div>
