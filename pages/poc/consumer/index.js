@@ -146,7 +146,7 @@ export default function Page() {
                             />
                             <div>
                                 <Badge color="black" size="xs" className="mb-2">
-                                    Petshop
+                                    Barbearia
                                 </Badge>
                                 <p className="text-xs font-bold">
                                     Wiegand Barber Shop
