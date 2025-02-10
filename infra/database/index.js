@@ -4,11 +4,8 @@ import { ServiceError } from "infra/errors";
 /**
  * @function query
  * @author Maykel Esser
- *
  * @description Query the database.
- *
  * @param {Object} queryObject - The query object.
- *
  * @returns {Promise<Object>} The result of the query.
  */
 async function query(queryObject) {
@@ -32,9 +29,7 @@ async function query(queryObject) {
 /**
  * @function getNewClient
  * @author Maykel Esser
- *
  * @description Get a new client for the connection and connect to the database.
- *
  * @returns {Client} The new client.
  * @see query
  */
@@ -55,11 +50,9 @@ async function getNewClient() {
 /**
  * @function getSSLValues
  * @author Maykel Esser
- *
  * @description Get the SSL values for the connection. We are checking if
  * the environment variable POSTGRES_CA is set, if it is we are returning
  * an object with the ca key and the value of the environment variable.
- *
  * @returns {Object} The SSL values.
  * @see getNewClient
  */

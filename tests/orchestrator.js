@@ -1,10 +1,8 @@
 /**
  * @flow Orchestrator
  * @author Maykel Esser
- *
  * @description This file contains the orchestrator logic for the tests.
  * It will wait for all services to be up and running before running the tests.
- *
  * This is useful when you have multiple services that need to be up and running
  * before you can run the tests, for instance, we need nextJS to be up and running and then
  * we can run the tests for the API.
@@ -17,9 +15,7 @@ import database from "infra/database";
 /**
  * @function waitForAllServices
  * @author Maykel Esser
- *
  * @description Wait for all services to be up and running.
- *
  * @returns {Promise<void>}
  * @see Tests - We are calling this function before running the tests through the beforeAll function.
  */
@@ -30,9 +26,7 @@ async function waitForAllServices() {
 /**
  * @function waitForWebServer
  * @author Maykel Esser
- *
  * @description Wait for the web server (NextJS) to be up and running.
- *
  * @returns {Promise<void>}
  * @see waitForAllServices
  */
@@ -47,9 +41,7 @@ async function waitForWebServer() {
 /**
  * @function fetchStatusPage
  * @author Maykel Esser
- *
  * @description Fetch the status page.
- *
  * @returns {Promise<void>}
  * @see waitForWebServer
  */
@@ -61,6 +53,13 @@ async function fetchStatusPage() {
     }
 }
 
+/**
+ * @function clearDatabase
+ * @author Maykel Esser
+ * @description Clear the database.
+ * @returns {Promise<void>}
+ * @see Tests - We are calling this function before running the tests through the beforeAll function.
+ */
 async function clearDatabase() {
     await database.query("DROP SCHEMA public cascade;");
     await database.query("CREATE SCHEMA public;");
