@@ -12,10 +12,10 @@ describe("POST Retrieve Credits", () => {
                 {
                     method: "POST",
                     headers: {
-                        'Content-Type': 'application/json',
+                        "Content-Type": "application/json",
                     },
                     body: JSON.stringify({
-                        qrCode: "67a022596c959096f38b51a2"
+                        qrCode: "67a022596c959096f38b51a2",
                     }),
                 },
             );
