@@ -95,8 +95,16 @@ export default function MyApp({ Component, pageProps, router }) {
                 "#000000",
             ],
         },
-        primaryColor: 'caramelo',
+        primaryColor: "caramelo",
         variantColorResolver,
+        components: {
+            Button: {
+                defaultProps: {
+                    variant: 'filled',
+                    color: 'caramelo',
+                },
+            },
+        },
     });
 
     return (
