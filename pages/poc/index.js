@@ -31,7 +31,7 @@ export default function Page() {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen p-10">
+        <div className="flex items-center justify-center min-h-screen p-8">
             <div className="w-full max-w-md">
                 <div className="mb-14 flex justify-center">
                     <Image src={Logo} alt="Caramelo®" width={200} />

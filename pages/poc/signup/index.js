@@ -7,7 +7,7 @@ import SignUpBusiness from "/public/images/signup/signup-business.png";
 
 export default function Page() {
     return (
-        <div className="flex items-center justify-center p-10">
+        <div className="flex items-center justify-center p-8">
             <div className="w-full max-w-md text-center">
                 <Link
                     href="/poc/signup/consumer"

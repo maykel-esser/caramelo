@@ -6,7 +6,7 @@ import CancelAccountImage from "public/images/cancel-account/account-cancelled.p
 export default function Page() {
     return (
         <>
-            <div className="flex items-center justify-center min-h-screen p-10">
+            <div className="flex items-center justify-center min-h-screen p-8">
                 <section className="text-center">
                     <div className="flex justify-center">
                         <Image

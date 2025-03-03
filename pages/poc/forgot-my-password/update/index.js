@@ -4,7 +4,7 @@ import { Button, PasswordInput } from "@mantine/core";
 
 export default function Page() {
     return (
-        <div className="flex items-center justify-center min-h-screen p-10">
+        <div className="flex items-center justify-center min-h-screen p-8">
             <div className="w-full max-w-md text-center">
                 <h1 className="text-2xl font-bold mb-5">Crie uma nova senha</h1>
                 <form className="text-left">

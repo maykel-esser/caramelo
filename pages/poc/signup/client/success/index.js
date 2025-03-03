@@ -7,7 +7,7 @@ import SignUpBusinessSuccess from "public/images/signup/signup-business-success.
 
 export default function Page() {
     return (
-        <div className="flex items-center justify-center min-h-screen p-10">
+        <div className="flex items-center justify-center min-h-screen p-8">
             <div className="w-full max-w-md text-center">
                 <div className="mb-14 flex justify-center">
                     <Image src={SignUpBusinessSuccess} alt="Obrigado" />

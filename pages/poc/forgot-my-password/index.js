@@ -7,7 +7,7 @@ import { PhoneIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
     return (
-        <div className="flex items-center justify-center p-10 min-h-screen">
+        <div className="flex items-center justify-center p-8 min-h-screen">
             <div className="w-full max-w-md text-center">
                 <h1 className="text-2xl font-bold mb-5">
                     Criar uma nova senha

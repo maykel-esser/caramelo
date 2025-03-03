@@ -3,7 +3,7 @@ import { Button, PinInput } from "@mantine/core";
 
 export default function Page() {
     return (
-        <div className="flex items-center justify-center min-h-screen p-10">
+        <div className="flex items-center justify-center min-h-screen p-8">
             <div className="w-full max-w-md text-center">
                 <h1 className="text-2xl font-bold mb-5">
                     Dá uma conferida no seu SMS
