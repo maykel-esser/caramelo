@@ -1,7 +1,7 @@
 import Link from "next/link";
 import NavigationMenu from "components/pages/poc/navigation";
 import ActionHeader from "components/pages/poc/header/actionHeader";
-import { Button, TextInput } from "@mantine/core";
+import { Button, TextInput, Select } from "@mantine/core";
 
 export default function Page() {
     return (
@@ -39,6 +39,22 @@ export default function Page() {
                                 required
                                 size="md"
                                 radius="md"
+                            />
+                        </div>
+                        <div className="mb-4">
+                            <Select
+                                label="Segmento"
+                                placeholder="Selecione o segmento"
+                                required
+                                size="md"
+                                radius="md"
+                                data={[
+                                    { value: "1", label: "Barbearia" },
+                                    { value: "2", label: "Salão de beleza" },
+                                    { value: "3", label: "Alimentação" },
+                                    { value: "4", label: "Petshop" },
+                                    { value: "5", label: "Outros" },
+                                ]}
                             />
                         </div>
                         <Button
