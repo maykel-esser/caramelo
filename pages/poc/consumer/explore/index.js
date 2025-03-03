@@ -66,7 +66,7 @@ export default function Page() {
                                     </p>
                                 </div>
                                 <div className="text-center ml-auto flex gap-2 items-center">
-                                    <MapPinIcon className="w-5 text-gray-400" />
+                                    <MapPinIcon className="w-5 text-yellow-400" />
                                     <p className="text-lg font-bold">3,5km</p>
                                 </div>
                             </div>
@@ -91,7 +91,7 @@ export default function Page() {
                                     </p>
                                 </div>
                                 <div className="text-center ml-auto flex gap-2 items-center">
-                                    <MapPinIcon className="w-5 text-gray-400" />
+                                    <MapPinIcon className="w-5 text-yellow-400" />
                                     <p className="text-lg font-bold">2,5km</p>
                                 </div>
                             </div>
