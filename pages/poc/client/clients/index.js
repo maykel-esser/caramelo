@@ -1,9 +1,13 @@
 import NavigationMenu from "components/pages/poc/navigation";
 import ActionHeader from "components/pages/poc/header/actionHeader";
 import UserList from "components/pages/poc/user/userList";
+import { TextInput } from "@mantine/core";
 
 // Consts
 import { RESOURCE_STATUS } from "constants/status.constants";
+
+// Icons
+import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
     return (
@@ -17,6 +21,16 @@ export default function Page() {
                     actionHref="/poc/client/clients/add"
                 />
                 <section>
+                    <form>
+                        <TextInput
+                            leftSection={<MagnifyingGlassIcon className="w-5" />}
+                            placeholder="Pesquisar por nome ou telefone"
+                            required
+                            size="md"
+                            radius="md"
+                            className="mb-8"
+                        />
+                    </form>
                     <UserList
                         name="Maykel Esser"
                         status={RESOURCE_STATUS.ACTIVE}
