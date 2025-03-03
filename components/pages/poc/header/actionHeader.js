@@ -9,7 +9,7 @@ import {
     PencilSquareIcon,
     BellIcon,
     ArchiveBoxXMarkIcon,
-    AdjustmentsHorizontalIcon
+    AdjustmentsHorizontalIcon,
 } from "@heroicons/react/24/outline";
 
 export default function ActionHeader(props) {

@@ -1,14 +1,23 @@
 import NavigationMenu from "components/pages/poc/navigation";
 import ActionHeader from "components/pages/poc/header/actionHeader";
-import { Badge, Avatar, Drawer, MultiSelect, Slider, Button } from "@mantine/core";
+import {
+    Badge,
+    Avatar,
+    Drawer,
+    MultiSelect,
+    Slider,
+    Button,
+} from "@mantine/core";
 import Link from "next/link";
 import { useDisclosure } from "@mantine/hooks";
 
 // Icons
-import { MapPinIcon, BuildingStorefrontIcon } from "@heroicons/react/24/outline";
+import {
+    MapPinIcon,
+    BuildingStorefrontIcon,
+} from "@heroicons/react/24/outline";
 
 export default function Page() {
-
     const [openedFilters, { open: openFilters, close: closeFilters }] =
         useDisclosure(false);
 
@@ -36,7 +45,9 @@ export default function Page() {
                             radius="sm"
                             color="black"
                             size="lg"
-                            leftSection={<BuildingStorefrontIcon className="w-4" />}
+                            leftSection={
+                                <BuildingStorefrontIcon className="w-4" />
+                            }
                         >
                             Barbearias
                         </Badge>
@@ -51,7 +62,11 @@ export default function Page() {
                                     size="md"
                                 />
                                 <div>
-                                    <Badge color="black" size="xs" className="mb-2">
+                                    <Badge
+                                        color="black"
+                                        size="xs"
+                                        className="mb-2"
+                                    >
                                         Petshop
                                     </Badge>
                                     <p className="text-xs font-bold">
@@ -77,7 +92,11 @@ export default function Page() {
                                     size="md"
                                 />
                                 <div>
-                                    <Badge color="black" size="xs" className="mb-2">
+                                    <Badge
+                                        color="black"
+                                        size="xs"
+                                        className="mb-2"
+                                    >
                                         Barbearia
                                     </Badge>
                                     <p className="text-xs font-bold">
