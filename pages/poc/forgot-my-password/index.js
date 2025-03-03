@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { IMaskInput } from "react-imask";
-import { TextInput, Button } from "@mantine/core";
+import { TextInput, Button, Divider } from "@mantine/core";
 
 // Icons
 import { PhoneIcon } from "@heroicons/react/24/outline";
@@ -28,17 +28,12 @@ export default function Page() {
                             radius="md"
                         />
                     </div>
-                    <Button
-                        variant="filled"
-                        fullWidth
-                        size="lg"
-                        radius="md"
-                        type="submit"
-                        color="black"
-                        component={Link}
-                        href="/poc/forgot-my-password/validation"
-                    >
+                    <Button variant="filled" type="submit">
                         Enviar código
+                    </Button>
+                    <Divider label="ou" my="lg" />
+                    <Button component={Link} href="/poc" variant="outline">
+                        Voltar para o login
                     </Button>
                 </form>
             </div>
