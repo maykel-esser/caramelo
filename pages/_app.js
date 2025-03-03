@@ -2,7 +2,12 @@ import { useEffect, useState, useRef } from "react";
 import "styles/global.css";
 import "@mantine/core/styles.css";
 import "@mantine/charts/styles.css";
-import { MantineProvider, createTheme, defaultVariantColorsResolver, parseThemeColor } from "@mantine/core";
+import {
+    MantineProvider,
+    createTheme,
+    defaultVariantColorsResolver,
+    parseThemeColor,
+} from "@mantine/core";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function MyApp({ Component, pageProps, router }) {
@@ -55,8 +60,8 @@ export default function MyApp({ Component, pageProps, router }) {
             theme: input.theme,
         });
 
-        if (parsedColor.isThemeColor && parsedColor.color === 'caramelo') {
-            if (input.variant === 'filled') {
+        if (parsedColor.isThemeColor && parsedColor.color === "caramelo") {
+            if (input.variant === "filled") {
                 return {
                     ...defaultResolvedColors,
                     background: input.theme.colors.caramelo[2],
@@ -65,10 +70,10 @@ export default function MyApp({ Component, pageProps, router }) {
                 };
             }
 
-            if (input.variant === 'outline') {
+            if (input.variant === "outline") {
                 return {
                     ...defaultResolvedColors,
-                    background: 'transparent',
+                    background: "transparent",
                     color: input.theme.colors.caramelo[6],
                     border: `2px solid ${input.theme.colors.caramelo[6]}`,
                     hover: input.theme.colors.caramelo[1],
@@ -100,8 +105,11 @@ export default function MyApp({ Component, pageProps, router }) {
         components: {
             Button: {
                 defaultProps: {
-                    variant: 'filled',
-                    color: 'caramelo',
+                    variant: "filled",
+                    color: "caramelo",
+                    size: "lg",
+                    radius: "md",
+                    fullWidth: true,
                 },
             },
         },
