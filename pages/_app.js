@@ -119,6 +119,12 @@ export default function MyApp({ Component, pageProps, router }) {
                     radius: "sm",
                 },
             },
+            Slider: {
+                defaultProps: {
+                    color: "caramelo.2",
+                    size: "lg"
+                },
+            },
         },
     });
 
