@@ -34,7 +34,9 @@ export default function ActionHeader(props) {
             icon = <ArchiveBoxXMarkIcon className="w-6 text-yellow-400" />;
             break;
         case "filter":
-            icon = <AdjustmentsHorizontalIcon className="w-6 text-yellow-400" />;
+            icon = (
+                <AdjustmentsHorizontalIcon className="w-6 text-yellow-400" />
+            );
             break;
     }
 
