@@ -90,8 +90,8 @@ export default function MyApp({ Component, pageProps, router }) {
                 "#FF5E39", // vermelho
                 "#6C67CE", // roxo
                 "#151613", // preto
-                "#0F100D",
-                "#090A08",
+                "#000000",
+                "#000000",
                 "#000000",
             ],
         },
