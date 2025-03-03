@@ -10,7 +10,9 @@ export default function ListItem(props) {
                 {props.icon && <props.icon className="w-6 text-yellow-400" />}
                 <span>{props.title}</span>
             </div>
-            {props.seeDetailsIcon && <ChevronRightIcon className="w-6 text-yellow-400" />}
+            {props.seeDetailsIcon && (
+                <ChevronRightIcon className="w-6 text-yellow-400" />
+            )}
         </div>
     );
 

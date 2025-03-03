@@ -73,11 +73,7 @@ export default function Page() {
                     <div className="flex items-center justify-between my-5">
                         <div className="flex items-start">
                             <div className="flex items-center h-5">
-                                <Checkbox
-                                    defaultChecked
-                                    label="Lembrar-me"
-
-                                />
+                                <Checkbox defaultChecked label="Lembrar-me" />
                             </div>
                         </div>
                         <Link

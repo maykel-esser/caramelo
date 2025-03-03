@@ -9,7 +9,9 @@ export default function NotificationItem(props) {
                     {!props.read && (
                         <span className="bg-red-500 text-center text-white w-2 h-2 ml-2 mb-2 rounded-full block"></span>
                     )}
-                    {props.icon && <props.icon className="w-6 text-yellow-400" />}
+                    {props.icon && (
+                        <props.icon className="w-6 text-yellow-400" />
+                    )}
                 </div>
                 <div>
                     <h3 className="font-bold">{props.title}</h3>
