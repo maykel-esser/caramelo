@@ -116,6 +116,7 @@ export default function Page() {
                             <MultiSelect
                                 placeholder="Selecione uma categoria"
                                 data={["Barbearia", "Petshop", "Restaurante"]}
+                                size="md"
                             />
                         </div>
                         <div className="mb-4">
