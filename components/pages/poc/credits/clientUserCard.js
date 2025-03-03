@@ -30,7 +30,7 @@ export default function ClientUserCard(props) {
                     {displayedCredits.map((credit, index) => (
                         <Popover position="top" key={index}>
                             <Popover.Target>
-                                <div className="border border-black bg-black rounded-md h-10"></div>
+                                <div className="border border-yellow-400 bg-yellow-400 rounded-md h-10"></div>
                             </Popover.Target>
                             <Popover.Dropdown>
                                 <div className="flex items-center gap-2">

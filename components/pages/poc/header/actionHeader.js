@@ -18,23 +18,23 @@ export default function ActionHeader(props) {
 
     switch (props.action) {
         case "add":
-            icon = <PlusIcon className="w-6" />;
+            icon = <PlusIcon className="w-6 text-yellow-400" />;
             break;
         case "edit":
-            icon = <PencilSquareIcon className="w-6" />;
+            icon = <PencilSquareIcon className="w-6 text-yellow-400" />;
             break;
         case "notification":
             icon = (
                 <Indicator color="red" offset={5} disabled={props.read}>
-                    <BellIcon className="w-6" />
+                    <BellIcon className="w-6 text-yellow-400" />
                 </Indicator>
             );
             break;
         case "clear":
-            icon = <ArchiveBoxXMarkIcon className="w-6" />;
+            icon = <ArchiveBoxXMarkIcon className="w-6 text-yellow-400" />;
             break;
         case "filter":
-            icon = <AdjustmentsHorizontalIcon className="w-6" />;
+            icon = <AdjustmentsHorizontalIcon className="w-6 text-yellow-400" />;
             break;
     }
 
