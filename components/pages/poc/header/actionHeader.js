@@ -9,6 +9,7 @@ import {
     PencilSquareIcon,
     BellIcon,
     ArchiveBoxXMarkIcon,
+    AdjustmentsHorizontalIcon
 } from "@heroicons/react/24/outline";
 
 export default function ActionHeader(props) {
@@ -32,10 +33,13 @@ export default function ActionHeader(props) {
         case "clear":
             icon = <ArchiveBoxXMarkIcon className="w-6" />;
             break;
+        case "filter":
+            icon = <AdjustmentsHorizontalIcon className="w-6" />;
+            break;
     }
 
     return (
-        <header className="flex items-center mb-8 pt-16 justify-between">
+        <header className="flex items-center mb-8 pt-16 justify-between border-b border-gray-200 pb-4">
             {props.backToPreviousPage ? (
                 <button onClick={() => router.back()}>
                     <ChevronLeftIcon className="w-6" />
