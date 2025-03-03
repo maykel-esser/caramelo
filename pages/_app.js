@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import "styles/global.css";
 import "@mantine/core/styles.css";
 import "@mantine/charts/styles.css";
-import { MantineProvider } from "@mantine/core";
+import { MantineProvider, createTheme, defaultVariantColorsResolver, parseThemeColor } from "@mantine/core";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function MyApp({ Component, pageProps, router }) {
@@ -48,6 +48,57 @@ export default function MyApp({ Component, pageProps, router }) {
         };
     }, [router]);
 
+    const variantColorResolver = (input) => {
+        const defaultResolvedColors = defaultVariantColorsResolver(input);
+        const parsedColor = parseThemeColor({
+            color: input.color || input.theme.primaryColor,
+            theme: input.theme,
+        });
+
+        if (parsedColor.isThemeColor && parsedColor.color === 'caramelo') {
+            if (input.variant === 'filled') {
+                return {
+                    ...defaultResolvedColors,
+                    background: input.theme.colors.caramelo[2],
+                    color: input.theme.colors.caramelo[6],
+                    hover: input.theme.colors.caramelo[1],
+                };
+            }
+
+            if (input.variant === 'outline') {
+                return {
+                    ...defaultResolvedColors,
+                    background: 'transparent',
+                    color: input.theme.colors.caramelo[6],
+                    border: `2px solid ${input.theme.colors.caramelo[6]}`,
+                    hover: input.theme.colors.caramelo[1],
+                    hoverColor: input.theme.colors.caramelo[6],
+                };
+            }
+        }
+
+        return defaultResolvedColors;
+    };
+
+    const theme = createTheme({
+        colors: {
+            caramelo: [
+                "#FFF5E6", // lightest shade
+                "#FFE6B3", // creme
+                "#FFD664", // amarelo
+                "#E28C0E", // queimado
+                "#FF5E39", // vermelho
+                "#6C67CE", // roxo
+                "#151613", // preto
+                "#0F100D",
+                "#090A08",
+                "#000000",
+            ],
+        },
+        primaryColor: 'caramelo',
+        variantColorResolver,
+    });
+
     return (
         <AnimatePresence mode="wait" initial={false}>
             <motion.div
@@ -57,7 +108,7 @@ export default function MyApp({ Component, pageProps, router }) {
                 exit={{ x: isBack ? "100%" : "-100%", opacity: 0 }}
                 transition={{ duration: 0.3, ease: "linear" }}
             >
-                <MantineProvider>
+                <MantineProvider theme={theme}>
                     <main className="bg-slate-50 min-h-screen">
                         <Component {...pageProps} />
                     </main>
