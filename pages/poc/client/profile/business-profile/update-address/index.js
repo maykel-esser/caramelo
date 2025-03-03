@@ -168,10 +168,6 @@ export default function Page() {
                         </div>
                         <Button
                             type="submit"
-                            size="lg"
-                            radius="md"
-                            fullWidth
-                            color="black"
                             component={Link}
                             href="/poc/client/profile/business-profile"
                         >

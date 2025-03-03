@@ -79,23 +79,11 @@ export default function CreditUserCard(props) {
                     </p>
                 )}
 
-                {/* Buttons for actions */}
                 <div className="grid grid-cols-2 gap-4 mt-4">
-                    <Button
-                        variant="outline"
-                        size="lg"
-                        radius="md"
-                        fullWidth
-                        color="black"
-                        onClick={openEditCredit}
-                    >
+                    <Button variant="outline" onClick={openEditCredit}>
                         Editar
                     </Button>
                     <Button
-                        size="lg"
-                        radius="md"
-                        fullWidth
-                        color="black"
                         disabled={credits.length < credit_needed}
                         onClick={openReleaseCredit}
                     >
@@ -156,10 +144,6 @@ export default function CreditUserCard(props) {
                             />
                         </div>
                         <Button
-                            size="lg"
-                            radius="md"
-                            fullWidth
-                            color="black"
                             onClick={() => {
                                 closeEditCredit();
                                 props.closeViewCredit();
@@ -194,10 +178,6 @@ export default function CreditUserCard(props) {
                     </p>
                     <div className="mt-6">
                         <Button
-                            size="lg"
-                            radius="md"
-                            fullWidth
-                            color="black"
                             onClick={() => {
                                 closeReleaseCredit();
                                 props.closeViewCredit();

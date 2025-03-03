@@ -45,10 +45,7 @@ export default function Page() {
                     </div>
                     <Button
                         variant="outline"
-                        size="lg"
-                        radius="md"
                         fullWidth
-                        color="black"
                         leftSection={<MapPinIcon className="w-6" />}
                         component={Link}
                         href="geo:-25.368932579233803,-49.26365500930971?q=Av. Anita Garibaldi, 1928 - Barreirinha"

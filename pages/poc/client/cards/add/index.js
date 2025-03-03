@@ -103,14 +103,7 @@ export default function Page() {
                                 onChange={setNumberValue}
                             />
                         </div>
-                        <Button
-                            size="lg"
-                            radius="md"
-                            fullWidth
-                            color="black"
-                            component={Link}
-                            href="/poc/client/cards"
-                        >
+                        <Button component={Link} href="/poc/client/cards">
                             Cadastrar
                         </Button>
                     </form>

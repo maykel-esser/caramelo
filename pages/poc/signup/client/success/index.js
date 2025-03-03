@@ -25,15 +25,7 @@ export default function Page() {
                     Obrigado novamente por se juntar ao Caramelo® e ajudar a
                     moldar o futuro da fidelidade digital!
                 </p>
-                <Button
-                    component={Link}
-                    href="/poc"
-                    size="lg"
-                    radius="md"
-                    my="xl"
-                    fullWidth
-                    color="black"
-                >
+                <Button component={Link} href="/poc" my="xl">
                     Volte para a página inicial
                 </Button>
             </div>

@@ -84,14 +84,7 @@ export default function Page() {
                                 min={1}
                             />
                         </div>
-                        <Button
-                            size="lg"
-                            radius="md"
-                            fullWidth
-                            color="black"
-                            component={Link}
-                            href="/poc/client/clients"
-                        >
+                        <Button component={Link} href="/poc/client/clients">
                             Cadastrar
                         </Button>
                     </form>

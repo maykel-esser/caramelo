@@ -143,15 +143,7 @@ export default function Page() {
                                 defaultValue={[3, 12]}
                             />
                         </div>
-                        <Button
-                            size="lg"
-                            radius="md"
-                            fullWidth
-                            color="black"
-                            onClick={closeFilters}
-                        >
-                            Aplicar
-                        </Button>
+                        <Button onClick={closeFilters}>Aplicar</Button>
                     </form>
                 </div>
             </Drawer>

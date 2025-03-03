@@ -90,11 +90,7 @@ export default function Page() {
                     </div>
                     <Button
                         variant="filled"
-                        fullWidth
-                        size="lg"
-                        radius="md"
                         type="submit"
-                        color="black"
                         component={Link}
                         href={isUser ? "/poc/consumer" : "/poc/client"}
                     >
@@ -105,10 +101,6 @@ export default function Page() {
                         component={Link}
                         href="/poc/signup"
                         variant="outline"
-                        size="lg"
-                        radius="md"
-                        fullWidth
-                        color="black"
                     >
                         Quero me cadastrar
                     </Button>

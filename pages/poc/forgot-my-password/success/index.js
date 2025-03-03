@@ -17,15 +17,7 @@ export default function Page() {
                     <strong>Você alterou sua senha!</strong>
                 </p>
                 <p>Aproveite que já está por aqui e faça o login novamente</p>
-                <Button
-                    component={Link}
-                    href="/poc"
-                    size="lg"
-                    radius="md"
-                    my="xl"
-                    fullWidth
-                    color="black"
-                >
+                <Button component={Link} href="/poc" my="xl">
                     Vamos nessa
                 </Button>
             </div>

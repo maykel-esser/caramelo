@@ -23,7 +23,9 @@ export default function Page() {
                 <section>
                     <form>
                         <TextInput
-                            leftSection={<MagnifyingGlassIcon className="w-5" />}
+                            leftSection={
+                                <MagnifyingGlassIcon className="w-5" />
+                            }
                             placeholder="Pesquisar por nome ou telefone"
                             required
                             size="md"

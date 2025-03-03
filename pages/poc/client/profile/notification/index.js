@@ -72,9 +72,6 @@ export default function Page() {
                     </p>
                     <div className="mt-6">
                         <Button
-                            size="lg"
-                            radius="md"
-                            fullWidth
                             color="red"
                             component={Link}
                             href="/poc/client/profile"

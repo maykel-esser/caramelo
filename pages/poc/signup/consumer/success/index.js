@@ -20,15 +20,7 @@ export default function Page() {
                     Aproveite que já está autenticado e você pode começar a usar
                     o Caramelo®!
                 </p>
-                <Button
-                    component={Link}
-                    href="/poc"
-                    size="lg"
-                    radius="md"
-                    my="xl"
-                    fullWidth
-                    color="black"
-                >
+                <Button component={Link} href="/poc" my="xl">
                     Vamos nessa
                 </Button>
             </div>

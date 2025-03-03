@@ -19,11 +19,6 @@ export default function Page() {
                         botão abaixo para continuar.
                     </p>
                     <Button
-                        variant="filled"
-                        fullWidth
-                        size="lg"
-                        radius="md"
-                        color="black"
                         component={Link}
                         target="_blank"
                         href="https://api.whatsapp.com/send?phone=5541984012834"

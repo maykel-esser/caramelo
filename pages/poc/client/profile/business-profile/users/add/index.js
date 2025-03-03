@@ -50,10 +50,6 @@ export default function Page() {
                             />
                         </div>
                         <Button
-                            size="lg"
-                            radius="md"
-                            fullWidth
-                            color="black"
                             component={Link}
                             href="/poc/client/profile/business-profile/users"
                         >

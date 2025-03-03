@@ -58,9 +58,6 @@ export default function CreditList(props) {
                     </p>
                     <div className="mt-6">
                         <Button
-                            size="lg"
-                            radius="md"
-                            fullWidth
                             color="red"
                             onClick={() => {
                                 closeRejectCredit();

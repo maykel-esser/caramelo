@@ -63,12 +63,7 @@ export default function Page() {
                         />
                     </div>
                     <Button
-                        variant="filled"
-                        fullWidth
-                        size="lg"
-                        radius="md"
                         type="submit"
-                        color="black"
                         component={Link}
                         href="/poc/signup/client/success"
                     >

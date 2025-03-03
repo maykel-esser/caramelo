@@ -93,7 +93,6 @@ export default function Page() {
                             <div className="flex gap-2 items-center mb-8 pb-8 border-b">
                                 <Badge
                                     radius="sm"
-                                    color="black"
                                     size="lg"
                                     leftSection={
                                         <BuildingStorefrontIcon className="w-4" />
@@ -103,7 +102,6 @@ export default function Page() {
                                 </Badge>
                                 <Badge
                                     radius="sm"
-                                    color="black"
                                     size="lg"
                                     leftSection={<MapPinIcon className="w-4" />}
                                 >

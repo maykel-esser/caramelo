@@ -45,12 +45,7 @@ export default function Page() {
                         <NewPasswordInput placeholder="Sua senha" />
                     </div>
                     <Button
-                        variant="filled"
-                        fullWidth
-                        size="lg"
-                        radius="md"
                         type="submit"
-                        color="black"
                         component={Link}
                         href="/poc/signup/consumer/token"
                     >

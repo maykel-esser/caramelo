@@ -45,14 +45,7 @@ export default function Page() {
                             <p>{mask("41984012834", "(00) 00000-0000")}</p>
                         </div>
                     </div>
-                    <Button
-                        variant="outline"
-                        size="lg"
-                        radius="md"
-                        fullWidth
-                        color="red"
-                        onClick={openRemove}
-                    >
+                    <Button variant="outline" color="red" onClick={openRemove}>
                         Desativar
                     </Button>
                 </section>
@@ -79,9 +72,6 @@ export default function Page() {
                     </p>
                     <div className="mt-6">
                         <Button
-                            size="lg"
-                            radius="md"
-                            fullWidth
                             color="red"
                             component={Link}
                             href="/poc/client/profile/business-profile/users"
@@ -126,14 +116,7 @@ export default function Page() {
                             />
                         </div>
                         <div className="mt-6">
-                            <Button
-                                size="lg"
-                                radius="md"
-                                fullWidth
-                                color="black"
-                            >
-                                Atualizar dados
-                            </Button>
+                            <Button>Atualizar dados</Button>
                         </div>
                     </form>
                 </div>

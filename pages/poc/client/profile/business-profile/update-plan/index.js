@@ -40,14 +40,7 @@ export default function Page() {
                             <p>R$9,90/mês</p>
                         </div>
                     </div>
-                    <Button
-                        variant="outline"
-                        size="lg"
-                        radius="md"
-                        fullWidth
-                        color="black"
-                        onClick={openSubscription}
-                    >
+                    <Button variant="outline" onClick={openSubscription}>
                         Gerenciar Assinatura
                     </Button>
                 </section>
@@ -74,10 +67,6 @@ export default function Page() {
                     </p>
                     <div className="mt-6">
                         <Button
-                            size="lg"
-                            radius="md"
-                            fullWidth
-                            color="black"
                             component={Link}
                             target="_blank"
                             href="https://appcaramelo.com.br"

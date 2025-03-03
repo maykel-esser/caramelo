@@ -42,14 +42,7 @@ export default function Page() {
                                 type="email"
                             />
                         </div>
-                        <Button
-                            size="lg"
-                            radius="md"
-                            fullWidth
-                            color="black"
-                            component={Link}
-                            href="/poc/consumer/profile"
-                        >
+                        <Button component={Link} href="/poc/consumer/profile">
                             Atualizar dados
                         </Button>
                     </form>
