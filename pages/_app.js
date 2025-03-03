@@ -74,8 +74,8 @@ export default function MyApp({ Component, pageProps, router }) {
                 return {
                     ...defaultResolvedColors,
                     background: "transparent",
-                    color: input.theme.colors.caramelo[6],
-                    border: `2px solid ${input.theme.colors.caramelo[6]}`,
+                    color: input.theme.colors.caramelo[7],
+                    border: `2px solid ${input.theme.colors.caramelo[7]}`,
                     hover: input.theme.colors.caramelo[1],
                     hoverColor: input.theme.colors.caramelo[6],
                 };
@@ -95,7 +95,7 @@ export default function MyApp({ Component, pageProps, router }) {
                 "#FF5E39", // vermelho
                 "#6C67CE", // roxo
                 "#151613", // preto
-                "#000000",
+                "#ffbe2c", // amarelo (um pouco mais forte)
                 "#000000",
                 "#000000",
             ],
@@ -110,6 +110,13 @@ export default function MyApp({ Component, pageProps, router }) {
                     size: "lg",
                     radius: "md",
                     fullWidth: true,
+                },
+            },
+            Badge: {
+                defaultProps: {
+                    color: "caramelo",
+                    size: "lg",
+                    radius: "sm",
                 },
             },
         },

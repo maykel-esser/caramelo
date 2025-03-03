@@ -19,9 +19,7 @@ export default function ClientCardList(props) {
                         size="lg"
                     />
                     <div>
-                        <Badge color="black" size="xs" className="">
-                            {props.category}
-                        </Badge>
+                        <Badge size="xs">{props.category}</Badge>
                         <h2 className="font-bold">{props.client}</h2>
                         <p className="text-xs text-gray-400">{props.address}</p>
                     </div>

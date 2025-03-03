@@ -96,7 +96,7 @@ export default function Page() {
                                 size="md"
                             />
                             <div>
-                                <Badge color="black" size="xs" className="mb-2">
+                                <Badge size="xs" className="mb-2">
                                     Petshop
                                 </Badge>
                                 <p className="text-xs font-bold">
@@ -122,7 +122,7 @@ export default function Page() {
                                 size="md"
                             />
                             <div>
-                                <Badge color="black" size="xs" className="mb-2">
+                                <Badge size="xs" className="mb-2">
                                     Pizzaria
                                 </Badge>
                                 <p className="text-xs font-bold">Grano Vivo</p>
@@ -145,7 +145,7 @@ export default function Page() {
                                 size="md"
                             />
                             <div>
-                                <Badge color="black" size="xs" className="mb-2">
+                                <Badge size="xs" className="mb-2">
                                     Barbearia
                                 </Badge>
                                 <p className="text-xs font-bold">

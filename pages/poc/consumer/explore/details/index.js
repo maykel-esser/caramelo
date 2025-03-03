@@ -20,18 +20,10 @@ export default function Page() {
                 />
                 <section>
                     <div className="flex gap-2 mb-4">
-                        <Badge
-                            radius="sm"
-                            color="black"
-                            size="lg"
-                            leftSection={<MapPinIcon className="w-4" />}
-                        >
+                        <Badge leftSection={<MapPinIcon className="w-4" />}>
                             Aprox. 3km
                         </Badge>
                         <Badge
-                            radius="sm"
-                            color="black"
-                            size="lg"
                             leftSection={
                                 <BuildingStorefrontIcon className="w-4" />
                             }

@@ -76,24 +76,22 @@ export default function Page() {
             <main className="px-4 pb-32">
                 <ActionHeader title="Cartões" backToPreviousPage={true} />
                 <section>
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 border-b mb-8 pb-8">
                         <Avatar
                             key="Wiegand Barber Shop"
                             name="Wiegand Barber Shop"
                             color="initials"
                             size="lg"
                         />
-                        <div>
+                        <div className="">
                             <h2 className="text-lg font-bold">
                                 Wiegand Barber Shop
                             </h2>
                             <p className="mb-2">
                                 Av. Anita Garibaldi, 1928 - Barreirinha
                             </p>
-                            <div className="flex gap-2 items-center mb-8 pb-8 border-b">
+                            <div className="flex gap-2 items-center">
                                 <Badge
-                                    radius="sm"
-                                    size="lg"
                                     leftSection={
                                         <BuildingStorefrontIcon className="w-4" />
                                     }
@@ -101,8 +99,6 @@ export default function Page() {
                                     Barbearia
                                 </Badge>
                                 <Badge
-                                    radius="sm"
-                                    size="lg"
                                     leftSection={<MapPinIcon className="w-4" />}
                                 >
                                     3.5km

@@ -33,18 +33,10 @@ export default function Page() {
                 />
                 <section>
                     <div className="flex gap-2">
-                        <Badge
-                            radius="sm"
-                            color="black"
-                            size="lg"
-                            leftSection={<MapPinIcon className="w-4" />}
-                        >
+                        <Badge leftSection={<MapPinIcon className="w-4" />}>
                             Até 3km
                         </Badge>
                         <Badge
-                            radius="sm"
-                            color="black"
-                            size="lg"
                             leftSection={
                                 <BuildingStorefrontIcon className="w-4" />
                             }
@@ -62,11 +54,7 @@ export default function Page() {
                                     size="md"
                                 />
                                 <div>
-                                    <Badge
-                                        color="black"
-                                        size="xs"
-                                        className="mb-2"
-                                    >
+                                    <Badge size="xs" className="mb-2">
                                         Petshop
                                     </Badge>
                                     <p className="text-xs font-bold">
@@ -92,11 +80,7 @@ export default function Page() {
                                     size="md"
                                 />
                                 <div>
-                                    <Badge
-                                        color="black"
-                                        size="xs"
-                                        className="mb-2"
-                                    >
+                                    <Badge size="xs" className="mb-2">
                                         Barbearia
                                     </Badge>
                                     <p className="text-xs font-bold">
