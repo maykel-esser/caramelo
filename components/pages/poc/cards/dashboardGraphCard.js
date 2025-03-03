@@ -7,7 +7,7 @@ export default function DashboardGraphCard(props) {
         <section className="mb-8 bg-white p-4 rounded-xl">
             <div className="flex items-center gap-3 mb-6">
                 {props.icon && (
-                    <props.icon className="rounded-full border w-10 p-2 bg-black text-white" />
+                    <props.icon className="rounded-full w-10 p-2 bg-yellow-400 text-white" />
                 )}
                 <div>
                     <h2 className="font-bold">{title}</h2>

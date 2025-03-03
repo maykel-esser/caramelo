@@ -48,7 +48,7 @@ export default function CardList(props) {
                         >
                             {props.creditsGiven && (
                                 <div className="flex gap-2">
-                                    <TicketIcon className="w-4" />
+                                    <TicketIcon className="w-4 text-yellow-400" />
                                     <p className="text-sm font-bold">
                                         {props.creditsGiven} créditos dados
                                     </p>
@@ -56,7 +56,7 @@ export default function CardList(props) {
                             )}
                             {props.clientsUsing && (
                                 <div className="flex gap-2 pl-3">
-                                    <UsersIcon className="w-4" />
+                                    <UsersIcon className="w-4 text-yellow-400" />
                                     <p className="text-sm font-bold">
                                         {props.clientsUsing} clientes
                                     </p>

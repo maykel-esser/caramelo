@@ -125,6 +125,12 @@ export default function MyApp({ Component, pageProps, router }) {
                     size: "lg",
                 },
             },
+            Checkbox: {
+                defaultProps: {
+                    color: "caramelo.2",
+                    size: "md",
+                },
+            },
         },
     });
 

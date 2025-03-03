@@ -40,7 +40,7 @@ export default function Page() {
                     <div className="mb-4">
                         <Switch
                             size="md"
-                            color="dark.4"
+                            color="caramelo.2"
                             onLabel={switchUser}
                             offLabel={switchCompany}
                             label="Demonstração cliente/consumidor"
@@ -76,8 +76,7 @@ export default function Page() {
                                 <Checkbox
                                     defaultChecked
                                     label="Lembrar-me"
-                                    size="md"
-                                    color="black"
+
                                 />
                             </div>
                         </div>

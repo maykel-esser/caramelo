@@ -44,7 +44,7 @@ export default function ActionHeader(props) {
         <header className="flex items-center mb-8 pt-16 justify-between border-b border-gray-200 pb-4">
             {props.backToPreviousPage ? (
                 <button onClick={() => router.back()}>
-                    <ChevronLeftIcon className="w-6" />
+                    <ChevronLeftIcon className="w-6 text-yellow-400" />
                 </button>
             ) : (
                 <div className="w-6" />
