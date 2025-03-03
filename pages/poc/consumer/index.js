@@ -21,7 +21,7 @@ export default function Page() {
                             </p>
                         </div>
                         <Link
-                            href="/poc/customer/credits"
+                            href="/poc/consumer/cards"
                             className="text-xs underline font-bold"
                         >
                             Meus cartões
@@ -81,7 +81,7 @@ export default function Page() {
                             </p>
                         </div>
                         <Link
-                            href="/poc/customer/explore"
+                            href="/poc/consumer/explore"
                             className="text-xs underline font-bold"
                         >
                             Explorar
