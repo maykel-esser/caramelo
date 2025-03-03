@@ -46,9 +46,10 @@ export default function Page() {
     };
 
     const handleError = (error) => {
+        const errorMessage = error?.message || error?.toString() || error;
         if (
-            !error.includes("No barcode or QR code detected") &&
-            !error.includes(
+            !errorMessage?.includes("No barcode or QR code detected") &&
+            !errorMessage?.includes(
                 "No MultiFormat Readers were able to detect the code",
             )
         ) {
