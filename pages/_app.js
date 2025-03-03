@@ -122,7 +122,7 @@ export default function MyApp({ Component, pageProps, router }) {
             Slider: {
                 defaultProps: {
                     color: "caramelo.2",
-                    size: "lg"
+                    size: "lg",
                 },
             },
         },
