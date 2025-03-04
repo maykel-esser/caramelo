@@ -6,7 +6,7 @@ import { Avatar, Badge } from "@mantine/core";
 // Icons
 import {
     MapPinIcon,
-    BuildingStorefrontIcon,
+    ScissorsIcon,
 } from "@heroicons/react/24/outline";
 
 export default function Page() {
@@ -93,7 +93,7 @@ export default function Page() {
                             <div className="flex gap-2 items-center">
                                 <Badge
                                     leftSection={
-                                        <BuildingStorefrontIcon className="w-4" />
+                                        <ScissorsIcon className="w-4" />
                                     }
                                 >
                                     Barbearia

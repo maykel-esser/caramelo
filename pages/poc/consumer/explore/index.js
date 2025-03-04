@@ -14,7 +14,7 @@ import { useDisclosure } from "@mantine/hooks";
 // Icons
 import {
     MapPinIcon,
-    BuildingStorefrontIcon,
+    ScissorsIcon
 } from "@heroicons/react/24/outline";
 
 export default function Page() {
@@ -38,7 +38,7 @@ export default function Page() {
                         </Badge>
                         <Badge
                             leftSection={
-                                <BuildingStorefrontIcon className="w-4" />
+                                <ScissorsIcon className="w-4" />
                             }
                         >
                             Barbearias

@@ -21,7 +21,7 @@ export default function Page() {
                     <ClientCardList
                         client="Grano Vivo"
                         status={RESOURCE_STATUS.ACTIVE}
-                        category="Pizzaria"
+                        category="Alimentação"
                         address="Av. Paraná 3301 - Bacacheri"
                     />
                 </section>
