@@ -69,8 +69,6 @@ function NewPasswordInput(props) {
                 >
                     <PasswordInput
                         placeholder={props.placeholder}
-                        radius="md"
-                        size="md"
                         onChange={(event) => {
                             setPasswordValue(event.currentTarget.value);
                         }}

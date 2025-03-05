@@ -138,6 +138,13 @@ export default function MyApp({ Component, pageProps, router }) {
                     variant: "filled",
                 },
             },
+            PasswordInput: {
+                defaultProps: {
+                    size: "md",
+                    radius: "md",
+                    variant: "filled",
+                },
+            },
         },
     });
 

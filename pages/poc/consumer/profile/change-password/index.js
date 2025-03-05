@@ -22,8 +22,6 @@ export default function Page() {
                             <PasswordInput
                                 placeholder="Confirme sua nova senha"
                                 required
-                                size="md"
-                                radius="md"
                             />
                         </div>
                         <Button

@@ -64,8 +64,6 @@ export default function Page() {
                         <PasswordInput
                             placeholder="Sua senha"
                             required
-                            size="md"
-                            radius="md"
                         />
                     </div>
                     <div className="flex items-center justify-between my-5">
