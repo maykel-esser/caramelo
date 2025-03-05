@@ -15,7 +15,7 @@ import {
 
 export default function NavigationMenu(props) {
     return (
-        <nav className="fixed bottom-0 bg-white w-full px-4 pb-8 pt-6 z-50 shadow-[0_-10px_10px_rgba(0,0,0,0.01)]">
+        <nav className="fixed bottom-0 bg-white w-full px-4 pb-8 pt-4 z-50 shadow-[0_-10px_10px_rgba(0,0,0,0.01)] rounded-t-3xl">
             <ul className="flex justify-around items-center">
                 {props.source === USER_ROLES.CLIENT && (
                     <>
@@ -33,6 +33,7 @@ export default function NavigationMenu(props) {
                             href="/poc/client/release"
                             icon={SquaresPlusIcon}
                             label="Liberar"
+                            highlight={true}
                         />
                         <NavigationMenuItem
                             href="/poc/client/clients"
@@ -62,6 +63,7 @@ export default function NavigationMenu(props) {
                             href="/poc/consumer/retrieve"
                             icon={SquaresPlusIcon}
                             label="Resgatar"
+                            highlight={true}
                         />
                         <NavigationMenuItem
                             href="/poc/consumer/explore"
