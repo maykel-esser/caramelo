@@ -5,3 +5,9 @@
 .mantine-TextInput-input {
     background: #FFF !important;
 }
+p {
+    @apply text-slate-500;
+}
+p.strong {
+    @apply text-slate-700;
+}
