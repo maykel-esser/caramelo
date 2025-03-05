@@ -19,8 +19,6 @@ export default function Page() {
                                 label="Seu nome"
                                 placeholder="Nome"
                                 required
-                                size="md"
-                                radius="md"
                             />
                         </div>
                         <div className="mb-4">
@@ -28,8 +26,6 @@ export default function Page() {
                                 label="Telefone"
                                 placeholder="Telefone"
                                 required
-                                size="md"
-                                radius="md"
                             />
                         </div>
                         <div className="mb-4">
@@ -37,8 +33,6 @@ export default function Page() {
                                 label="Seu e-mail"
                                 placeholder="E-mail"
                                 required
-                                size="md"
-                                radius="md"
                                 type="email"
                             />
                         </div>

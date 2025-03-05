@@ -98,8 +98,6 @@ export default function Page() {
                                 label="Nome"
                                 placeholder="Seu nome completo"
                                 required
-                                size="md"
-                                radius="md"
                                 value="Maykel Esser"
                             />
                         </div>
@@ -110,8 +108,6 @@ export default function Page() {
                                 label="Telefone"
                                 placeholder="Telefone de contato"
                                 required
-                                size="md"
-                                radius="md"
                                 value="41984012834"
                             />
                         </div>

@@ -26,16 +26,12 @@ export default function Page() {
                         <TextInput
                             placeholder="Seu nome"
                             required
-                            size="md"
-                            radius="md"
                         />
                     </div>
                     <div className="mb-4">
                         <TextInput
                             placeholder="Digite um telefone"
                             required
-                            size="md"
-                            radius="md"
                             component={IMaskInput}
                             mask="(00) 00000-0000"
                             leftSection={<PhoneIcon className="w-5" />}

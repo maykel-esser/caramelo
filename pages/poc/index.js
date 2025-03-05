@@ -57,8 +57,6 @@ export default function Page() {
                             required
                             component={IMaskInput}
                             mask="(00) 00000-0000"
-                            size="md"
-                            radius="md"
                             value="41984012834"
                         />
                     </div>

@@ -29,16 +29,12 @@ export default function Page() {
                         <TextInput
                             placeholder="Nome da empresa"
                             required
-                            size="md"
-                            radius="md"
                         />
                     </div>
                     <div className="mb-4">
                         <TextInput
                             placeholder="Digite um e-mail para contato"
                             required
-                            size="md"
-                            radius="md"
                             leftSection={<EnvelopeIcon className="w-5" />}
                         />
                     </div>
@@ -46,8 +42,6 @@ export default function Page() {
                         <TextInput
                             placeholder="Digite um telefone/whatsapp para contato"
                             required
-                            size="md"
-                            radius="md"
                             component={IMaskInput}
                             mask="(00) 00000-0000"
                             leftSection={<PhoneIcon className="w-5" />}
@@ -57,8 +51,6 @@ export default function Page() {
                         <TextInput
                             placeholder="Cidade da empresa"
                             required
-                            size="md"
-                            radius="md"
                             leftSection={<MapPinIcon className="w-5" />}
                         />
                     </div>

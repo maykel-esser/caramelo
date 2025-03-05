@@ -28,8 +28,6 @@ export default function Page() {
                             }
                             placeholder="Pesquisar por nome ou telefone"
                             required
-                            size="md"
-                            radius="md"
                             className="mb-8"
                         />
                     </form>

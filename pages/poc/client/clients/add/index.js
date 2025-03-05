@@ -47,8 +47,6 @@ export default function Page() {
                                 label="Telefone"
                                 placeholder="Telefone (com DDD)"
                                 required
-                                size="md"
-                                radius="md"
                                 component={IMaskInput}
                                 mask="(00) 00000-0000"
                             />
@@ -58,8 +56,6 @@ export default function Page() {
                                 label="Nome do usuário"
                                 description="Opcional"
                                 placeholder="Nome completo"
-                                size="md"
-                                radius="md"
                             />
                         </div>
                         <Divider className="my-8" />

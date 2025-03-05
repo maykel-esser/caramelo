@@ -57,8 +57,6 @@ export default function Page() {
                                 description="Ex: A cada 10 serviços, ganhe um corte"
                                 placeholder="Título"
                                 required
-                                size="md"
-                                radius="md"
                             />
                         </div>
                         <div className="flex gap-4 items-end mb-4">

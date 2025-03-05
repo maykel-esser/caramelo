@@ -131,6 +131,13 @@ export default function MyApp({ Component, pageProps, router }) {
                     size: "md",
                 },
             },
+            TextInput: {
+                defaultProps: {
+                    size: "md",
+                    radius: "md",
+                    variant: "filled",
+                },
+            },
         },
     });
 

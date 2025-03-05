@@ -19,8 +19,6 @@ export default function Page() {
                                 label="Nome do estabelecimento"
                                 placeholder="Nome"
                                 required
-                                size="md"
-                                radius="md"
                             />
                         </div>
                         <div className="mb-4">
@@ -28,8 +26,6 @@ export default function Page() {
                                 label="Telefone"
                                 placeholder="Telefone"
                                 required
-                                size="md"
-                                radius="md"
                             />
                         </div>
                         <div className="mb-4">
@@ -37,8 +33,6 @@ export default function Page() {
                                 label="Documento"
                                 placeholder="Seu documento (CPF/CNPJ)"
                                 required
-                                size="md"
-                                radius="md"
                             />
                         </div>
                         <div className="mb-4">

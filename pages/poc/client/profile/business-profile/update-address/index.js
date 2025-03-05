@@ -91,8 +91,6 @@ export default function Page() {
                                 placeholder="Digite seu CEP"
                                 description="Coloque seu CEP. Vamos tentar buscar seu endereço automaticamente."
                                 required
-                                size="md"
-                                radius="md"
                                 rightSection={
                                     <MagnifyingGlassIcon
                                         onClick={handleCEPLookup}
@@ -108,8 +106,6 @@ export default function Page() {
                                 label="Logradouro"
                                 placeholder="Rua, Avenida, etc."
                                 required
-                                size="md"
-                                radius="md"
                                 disabled={!form.values.logradouro}
                                 {...form.getInputProps("logradouro")}
                             />
@@ -119,8 +115,6 @@ export default function Page() {
                                 label="Número"
                                 placeholder="Número"
                                 required
-                                size="md"
-                                radius="md"
                                 {...form.getInputProps("numero")}
                             />
                         </div>
@@ -128,8 +122,6 @@ export default function Page() {
                             <TextInput
                                 label="Complemento"
                                 placeholder="Complemento"
-                                size="md"
-                                radius="md"
                                 {...form.getInputProps("complemento")}
                             />
                         </div>
@@ -138,8 +130,6 @@ export default function Page() {
                                 label="Bairro"
                                 placeholder="Bairro"
                                 required
-                                size="md"
-                                radius="md"
                                 disabled={!form.values.bairro}
                                 {...form.getInputProps("bairro")}
                             />
@@ -149,8 +139,6 @@ export default function Page() {
                                 label="Cidade"
                                 placeholder="Cidade"
                                 required
-                                size="md"
-                                radius="md"
                                 disabled={!form.values.cidade}
                                 {...form.getInputProps("cidade")}
                             />
@@ -160,8 +148,6 @@ export default function Page() {
                                 label="Estado"
                                 placeholder="Estado"
                                 required
-                                size="md"
-                                radius="md"
                                 disabled={!form.values.estado}
                                 {...form.getInputProps("estado")}
                             />

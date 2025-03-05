@@ -22,8 +22,6 @@ export default function Page() {
                             }
                             placeholder="Pesquise por pizzarias, barbearias, etc."
                             required
-                            size="md"
-                            radius="md"
                             className="mb-8"
                         />
                     </form>

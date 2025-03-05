@@ -120,8 +120,6 @@ export default function Page() {
                                 label="Título da promoção"
                                 placeholder="Título"
                                 required
-                                size="md"
-                                radius="md"
                                 value="A cada 10 serviços, ganhe um corte"
                             />
                         </div>

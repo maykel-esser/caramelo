@@ -24,8 +24,6 @@ export default function Page() {
                             required
                             component={IMaskInput}
                             mask="(00) 00000-0000"
-                            size="md"
-                            radius="md"
                         />
                     </div>
                     <Button variant="filled" type="submit">
