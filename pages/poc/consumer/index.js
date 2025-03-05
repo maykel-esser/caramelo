@@ -28,28 +28,28 @@ export default function Page() {
                     <div>
                         <h2 className="text-lg font-bold mb-4">Mais buscados</h2>
                         <div className="grid grid-cols-4 gap-4 mb-8">
-                            <div className="rounded-md p-4 text-center min-h-20 flex justify-center items-center border-yellow-400 border-2">
+                            <div className="rounded-lg p-4 text-center min-h-20 flex justify-center items-center bg-gradient-to-br from-[#FFE6B3] to-[#FFD664]">
                                 <Link href="/poc/consumer/explore">
                                     <ScissorsIcon className="w-8 h-8 m-auto mb-2 text-slate-700" />
-                                    <p className="text-xs leading-3">Barbearias</p>
+                                    <p className="text-xs leading-3 text-slate-700">Barbearias</p>
                                 </Link>
                             </div>
-                            <div className="rounded-md p-4 text-center min-h-20 flex justify-center items-center border-yellow-400 border-2">
+                            <div className="rounded-lg p-4 text-center min-h-20 flex justify-center items-center bg-gradient-to-br from-[#FFE6B3] to-[#FFD664]">
                                 <Link href="/poc/consumer/explore">
                                     <PiPizza className="w-8 h-8 m-auto mb-2 text-slate-700" />
-                                    <p className="text-xs leading-3">Alimentação</p>
+                                    <p className="text-xs leading-3 text-slate-700">Comidas</p>
                                 </Link>
                             </div>
-                            <div className="rounded-md p-4 text-center min-h-20 flex justify-center items-center border-yellow-400 border-2">
+                            <div className="rounded-lg p-4 text-center min-h-20 flex justify-center items-center bg-gradient-to-br from-[#FFE6B3] to-[#FFD664]">
                                 <Link href="/poc/consumer/explore">
                                     <PiPawPrint className="w-8 h-8 m-auto mb-2 text-slate-700" />
-                                    <p className="text-xs leading-3">Petshops</p>
+                                    <p className="text-xs leading-3 text-slate-700">Petshops</p>
                                 </Link>
                             </div>
-                            <div className="rounded-md p-4 text-center min-h-20 flex justify-center items-center border-yellow-400 border-2">
+                            <div className="rounded-lg p-4 text-center min-h-20 flex justify-center items-center bg-gradient-to-br from-[#FFE6B3] to-[#FFD664]">
                                 <Link href="/poc/consumer/explore">
                                     <PiGuitar className="w-8 h-8 m-auto mb-2 text-slate-700" />
-                                    <p className="text-xs leading-3">Estúdios musicais</p>
+                                    <p className="text-xs leading-3 text-slate-700">Estúdios musicais</p>
                                 </Link>
                             </div>
                         </div>
