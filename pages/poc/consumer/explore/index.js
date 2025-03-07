@@ -7,6 +7,7 @@ import {
     MultiSelect,
     Slider,
     Button,
+    TextInput
 } from "@mantine/core";
 import Link from "next/link";
 import { useDisclosure } from "@mantine/hooks";
@@ -14,7 +15,8 @@ import { useDisclosure } from "@mantine/hooks";
 // Icons
 import {
     MapPinIcon,
-    ScissorsIcon
+    ScissorsIcon,
+    MagnifyingGlassIcon
 } from "@heroicons/react/24/outline";
 
 export default function Page() {
@@ -32,6 +34,16 @@ export default function Page() {
                     onActionClick={openFilters}
                 />
                 <section>
+                    <form>
+                        <TextInput
+                            leftSection={
+                                <MagnifyingGlassIcon className="w-5" />
+                            }
+                            placeholder="Pesquise por pizzarias, barbearias, etc."
+                            required
+                            className="mb-8"
+                        />
+                    </form>
                     <div className="flex gap-2">
                         <Badge leftSection={<MapPinIcon className="w-4" />}>
                             Até 3km

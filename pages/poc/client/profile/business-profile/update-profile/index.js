@@ -40,8 +40,6 @@ export default function Page() {
                                 label="Segmento"
                                 placeholder="Selecione o segmento"
                                 required
-                                size="md"
-                                radius="md"
                                 data={[
                                     { value: "1", label: "Barbearia" },
                                     { value: "2", label: "Salão de beleza" },

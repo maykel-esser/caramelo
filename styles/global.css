@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 .mantine-TextInput-input,
-.mantine-PasswordInput-input {
+.mantine-PasswordInput-input,
+.mantine-Select-input {
     background: #FFF !important;
 }
 p {

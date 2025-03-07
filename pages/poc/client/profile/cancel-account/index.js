@@ -38,7 +38,7 @@ export default function Page() {
                         tenha).
                     </p>
                     <Button variant="outline" color="red" onClick={openRemove}>
-                        Quero continuar
+                        Quero cancelar mesmo assim
                     </Button>
                 </section>
             </main>

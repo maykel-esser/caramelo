@@ -99,6 +99,7 @@ export default function Page() {
                                 placeholder="Seu nome completo"
                                 required
                                 value="Maykel Esser"
+                                variant="default"
                             />
                         </div>
                         <div className="mb-4">
@@ -109,6 +110,7 @@ export default function Page() {
                                 placeholder="Telefone de contato"
                                 required
                                 value="41984012834"
+                                variant="default"
                             />
                         </div>
                         <div className="mt-6">

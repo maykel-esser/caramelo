@@ -145,6 +145,13 @@ export default function MyApp({ Component, pageProps, router }) {
                     variant: "filled",
                 },
             },
+            Select: {
+                defaultProps: {
+                    size: "md",
+                    radius: "md",
+                    variant: "filled",
+                },
+            },
         },
     });
 
