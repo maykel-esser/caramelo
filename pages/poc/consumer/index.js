@@ -4,7 +4,11 @@ import NavigationMenu from "components/pages/poc/navigation";
 import { Avatar, Badge, TextInput } from "@mantine/core";
 
 // Icons
-import { MapPinIcon, MagnifyingGlassIcon, ScissorsIcon } from "@heroicons/react/24/outline";
+import {
+    MapPinIcon,
+    MagnifyingGlassIcon,
+    ScissorsIcon,
+} from "@heroicons/react/24/outline";
 import { PiGuitar, PiPizza, PiPawPrint } from "react-icons/pi";
 
 export default function Page() {
@@ -26,30 +30,40 @@ export default function Page() {
                         />
                     </form>
                     <div>
-                        <h2 className="text-lg font-bold mb-4">Mais buscados</h2>
+                        <h2 className="text-lg font-bold mb-4">
+                            Mais buscados
+                        </h2>
                         <div className="grid grid-cols-4 gap-4 mb-8">
                             <div className="rounded-lg p-4 text-center min-h-20 flex justify-center items-center bg-gradient-to-br from-[#FFE6B3] to-[#FFD664]">
                                 <Link href="/poc/consumer/explore">
                                     <ScissorsIcon className="w-8 h-8 m-auto mb-2 text-slate-700" />
-                                    <p className="text-xs leading-3 text-slate-700">Barbearias</p>
+                                    <p className="text-xs leading-3 text-slate-700">
+                                        Barbearias
+                                    </p>
                                 </Link>
                             </div>
                             <div className="rounded-lg p-4 text-center min-h-20 flex justify-center items-center bg-gradient-to-br from-[#FFE6B3] to-[#FFD664]">
                                 <Link href="/poc/consumer/explore">
                                     <PiPizza className="w-8 h-8 m-auto mb-2 text-slate-700" />
-                                    <p className="text-xs leading-3 text-slate-700">Comidas</p>
+                                    <p className="text-xs leading-3 text-slate-700">
+                                        Comidas
+                                    </p>
                                 </Link>
                             </div>
                             <div className="rounded-lg p-4 text-center min-h-20 flex justify-center items-center bg-gradient-to-br from-[#FFE6B3] to-[#FFD664]">
                                 <Link href="/poc/consumer/explore">
                                     <PiPawPrint className="w-8 h-8 m-auto mb-2 text-slate-700" />
-                                    <p className="text-xs leading-3 text-slate-700">Petshops</p>
+                                    <p className="text-xs leading-3 text-slate-700">
+                                        Petshops
+                                    </p>
                                 </Link>
                             </div>
                             <div className="rounded-lg p-4 text-center min-h-20 flex justify-center items-center bg-gradient-to-br from-[#FFE6B3] to-[#FFD664]">
                                 <Link href="/poc/consumer/explore">
                                     <PiGuitar className="w-8 h-8 m-auto mb-2 text-slate-700" />
-                                    <p className="text-xs leading-3 text-slate-700">Estúdios musicais</p>
+                                    <p className="text-xs leading-3 text-slate-700">
+                                        Estúdios musicais
+                                    </p>
                                 </Link>
                             </div>
                         </div>
@@ -170,7 +184,9 @@ export default function Page() {
                                     <Badge size="xs" className="mb-2">
                                         Alimentação
                                     </Badge>
-                                    <p className="text-xs font-bold">Grano Vivo</p>
+                                    <p className="text-xs font-bold">
+                                        Grano Vivo
+                                    </p>
                                     <p className="text-xs">
                                         Av. Paraná 3301 - Bacacheri
                                     </p>

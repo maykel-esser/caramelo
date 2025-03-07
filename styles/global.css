@@ -5,7 +5,7 @@
 .mantine-TextInput-input,
 .mantine-PasswordInput-input,
 .mantine-Select-input {
-    background: #FFF !important;
+    background: #fff !important;
 }
 p {
     @apply text-slate-500;

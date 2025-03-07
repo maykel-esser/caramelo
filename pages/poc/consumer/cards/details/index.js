@@ -4,10 +4,7 @@ import ClientUserCard from "components/pages/poc/credits/clientUserCard";
 import { Avatar, Badge } from "@mantine/core";
 
 // Icons
-import {
-    MapPinIcon,
-    ScissorsIcon,
-} from "@heroicons/react/24/outline";
+import { MapPinIcon, ScissorsIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
     const dummyUserCardData = [

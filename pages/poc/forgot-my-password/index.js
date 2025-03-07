@@ -26,7 +26,12 @@ export default function Page() {
                             mask="(00) 00000-0000"
                         />
                     </div>
-                    <Button variant="filled" type="submit" component={Link} href="/poc/forgot-my-password/validation">
+                    <Button
+                        variant="filled"
+                        type="submit"
+                        component={Link}
+                        href="/poc/forgot-my-password/validation"
+                    >
                         Enviar código
                     </Button>
                     <Divider label="ou" my="lg" />

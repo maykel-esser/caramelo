@@ -26,10 +26,7 @@ export default function Page() {
                 </p>
                 <form className="text-left">
                     <div className="mb-4">
-                        <TextInput
-                            placeholder="Nome da empresa"
-                            required
-                        />
+                        <TextInput placeholder="Nome da empresa" required />
                     </div>
                     <div className="mb-4">
                         <TextInput

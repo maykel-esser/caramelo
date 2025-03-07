@@ -23,10 +23,7 @@ export default function Page() {
                 </p>
                 <form className="text-left">
                     <div className="mb-4">
-                        <TextInput
-                            placeholder="Seu nome"
-                            required
-                        />
+                        <TextInput placeholder="Seu nome" required />
                     </div>
                     <div className="mb-4">
                         <TextInput

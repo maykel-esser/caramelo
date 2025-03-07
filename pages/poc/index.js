@@ -61,10 +61,7 @@ export default function Page() {
                         />
                     </div>
                     <div className="mb-4">
-                        <PasswordInput
-                            placeholder="Sua senha"
-                            required
-                        />
+                        <PasswordInput placeholder="Sua senha" required />
                     </div>
                     <div className="flex items-center justify-between my-5">
                         <div className="flex items-start">

@@ -7,7 +7,7 @@ import {
     MultiSelect,
     Slider,
     Button,
-    TextInput
+    TextInput,
 } from "@mantine/core";
 import Link from "next/link";
 import { useDisclosure } from "@mantine/hooks";
@@ -16,7 +16,7 @@ import { useDisclosure } from "@mantine/hooks";
 import {
     MapPinIcon,
     ScissorsIcon,
-    MagnifyingGlassIcon
+    MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
 
 export default function Page() {
@@ -48,11 +48,7 @@ export default function Page() {
                         <Badge leftSection={<MapPinIcon className="w-4" />}>
                             Até 3km
                         </Badge>
-                        <Badge
-                            leftSection={
-                                <ScissorsIcon className="w-4" />
-                            }
-                        >
+                        <Badge leftSection={<ScissorsIcon className="w-4" />}>
                             Barbearias
                         </Badge>
                     </div>

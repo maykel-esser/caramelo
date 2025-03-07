@@ -31,7 +31,9 @@ export default function NavigationMenuItem(props) {
             className={
                 "flex flex-col items-center text-xs text-slate-700 " +
                 (isActive && !props.highlight ? "text-yellow-400" : "") +
-                (props.highlight ? "bg-yellow-400 p-3 rounded-xl -mt-20 shadow-lg" : "")
+                (props.highlight
+                    ? "bg-yellow-400 p-3 rounded-xl -mt-20 shadow-lg"
+                    : "")
             }
         >
             <Link href={props.href} className="flex flex-col items-center">
