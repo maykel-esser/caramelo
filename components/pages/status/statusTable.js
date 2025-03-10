@@ -11,12 +11,10 @@ import {
 /**
  * @function StatusTable
  * @author Maykel Esser
- *
  * @description Status table component.
  * @param {Object} props - Component props
  * @param {Boolean} props.isLoading - Loading status
  * @param {Object} props.data - Data to be displayed
- *
  * @return {JSX.Element} - If loading, it will return a loader. Otherwise, it will return the status table.
  */
 export default function StatusTable(props) {

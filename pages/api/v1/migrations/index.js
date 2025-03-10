@@ -11,12 +11,9 @@ export default router.handler(controller.errorHandlers);
 /**
  * @function getHandler
  * @author Maykel Esser
- *
  * @description This function is responsible for handling the migration of the database.
- *
  * @param {*} req - The request object.
  * @param {*} res - The response object.
- *
  * @returns {Array} - Returns an array with the migrations that were executed.
  */
 async function getHandler(req, res) {
