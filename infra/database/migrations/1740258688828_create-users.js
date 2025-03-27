@@ -31,21 +31,23 @@ exports.up = (pgm) => {
             unique: true,
         },
 
-        // Bcrypt have a maximum password length of 72 characters.
-        // Ref: https://security.stackexchange.com/q/39849
+        // Bcrypt have a maximum password length of 60 characters.
+        // Ref: https://www.npmjs.com/package/bcrypt#hash-info
         password: {
-            type: "varchar(72)",
+            type: "varchar(60)",
             notNull: true,
         },
 
         created_at: {
             type: "timestamptz",
-            default: pgm.func("now()"),
+            default: pgm.func("timezone('utc', now())"),
+            notNull: true,
         },
 
         updated_at: {
             type: "timestamptz",
-            default: pgm.func("now()"),
+            default: pgm.func("timezone('utc', now())"),
+            notNull: true,
         },
     });
 };
