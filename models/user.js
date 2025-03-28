@@ -18,7 +18,7 @@ async function create(userInputValues) {
                 WHERE
                     LOWER(email) = LOWER($1)
             ;`,
-            values: [email]
+            values: [email],
         });
 
         if (result.rowCount > 0) {
@@ -41,7 +41,7 @@ async function create(userInputValues) {
                 WHERE
                     LOWER(username) = LOWER($1)
             ;`,
-            values: [username]
+            values: [username],
         });
 
         if (result.rowCount > 0) {
@@ -63,7 +63,11 @@ async function create(userInputValues) {
                 RETURNING
                     *
                 ;`,
-            values: [userInputValues.username, userInputValues.email, userInputValues.password]
+            values: [
+                userInputValues.username,
+                userInputValues.email,
+                userInputValues.password,
+            ],
         });
 
         return result.rows[0];
@@ -83,7 +87,7 @@ async function findOneByUsername(username) {
                 LIMIT
                     1
             ;`,
-            values: [username]
+            values: [username],
         });
 
         if (result.rowCount === 0) {
