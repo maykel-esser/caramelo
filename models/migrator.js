@@ -7,7 +7,7 @@ import { resolve } from "node:path";
 const defaultMigrationOptions = {
     dir: resolve("infra", "database", "migrations"),
     direction: "up",
-    verbose: true,
+    log: () => {},
     migrationsTable: "pgmigrations",
 };
 
