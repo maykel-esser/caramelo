@@ -34,7 +34,7 @@ describe("GET Users (By Username) Endpoint", () => {
                 id: response2Body.id,
                 username: "SameCase",
                 email: "same.case@test.com",
-                password: "testKey01@!",
+                password: response2Body.password,
                 created_at: response2Body.created_at,
                 updated_at: response2Body.updated_at,
             });
@@ -68,7 +68,7 @@ describe("GET Users (By Username) Endpoint", () => {
                 id: response2Body.id,
                 username: "SameCase1",
                 email: "same.case1@test.com",
-                password: "testKey01@!",
+                password: response2Body.password,
                 created_at: response2Body.created_at,
                 updated_at: response2Body.updated_at,
             });
