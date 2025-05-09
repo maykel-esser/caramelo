@@ -13,7 +13,9 @@ function getNumberOfRounds() {
     return process.env.NODE_ENV === "production" ? 14 : 1;
 }
 
-export default {
+const password = {
     hash,
-    compare
+    compare,
 };
+
+export default password;
