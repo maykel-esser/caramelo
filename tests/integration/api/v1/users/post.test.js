@@ -1,5 +1,7 @@
 import { version as uuidVersion } from "uuid";
 import orchestrator from "tests/orchestrator.js";
+import user from "models/user";
+import password from "models/password";
 
 beforeAll(async () => {
     await orchestrator.waitForAllServices();
@@ -27,16 +29,29 @@ describe("POST Users Endpoint", () => {
                 id: responseBody.id,
                 username: "test",
                 email: "test@test.com",
-                password: "test123@!",
+                password: responseBody.password,
                 created_at: responseBody.created_at,
                 updated_at: responseBody.updated_at,
             });
             expect(uuidVersion(responseBody.id)).toBe(4);
             expect(Date.parse(responseBody.created_at)).not.toBeNaN();
             expect(Date.parse(responseBody.updated_at)).not.toBeNaN();
+
+            const userInDatabase = await user.findOneByUsername("test");
+            const correctPasswordMatch = await password.compare(
+                "test123@!",
+                userInDatabase.password,
+            );
+            const incorrectPasswordMatch = await password.compare(
+                "test123@!1",
+                userInDatabase.password,
+            );
+
+            expect(correctPasswordMatch).toBe(true);
+            expect(incorrectPasswordMatch).toBe(false);
         });
 
-        test("With duplicated email data", async () => {
+        test("With duplicated e-mail", async () => {
             const response = await fetch("http://localhost:3000/api/v1/users", {
                 method: "POST",
                 headers: {
@@ -68,13 +83,13 @@ describe("POST Users Endpoint", () => {
             expect(response2.status).toBe(400);
             expect(response2Body).toEqual({
                 name: "ValidationError",
-                message: "Email already exists",
-                action: "Use another email address",
+                message: "E-mail already exists",
+                action: "Use another e-mail for this operation",
                 status_code: 400,
             });
         });
 
-        test("With duplicated username data", async () => {
+        test("With duplicated username", async () => {
             const response = await fetch("http://localhost:3000/api/v1/users", {
                 method: "POST",
                 headers: {
@@ -107,7 +122,7 @@ describe("POST Users Endpoint", () => {
             expect(response2Body).toEqual({
                 name: "ValidationError",
                 message: "Username already exists",
-                action: "Use another username",
+                action: "Use another username for this operation",
                 status_code: 400,
             });
         });
