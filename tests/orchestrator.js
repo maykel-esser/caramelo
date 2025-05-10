@@ -9,9 +9,13 @@
  *
  * @see beforeAll in tests. We are calling the orchestrator to wait for all services to be up and running.
  */
+
+import { faker } from "@faker-js/faker";
 import retry from "async-retry";
+import user from "models/user";
 import database from "infra/database";
 import migrator from "models/migrator";
+
 
 /**
  * @function waitForAllServices
@@ -70,10 +74,19 @@ async function runPendingMigrations() {
     await migrator.runPendingMigrations();
 }
 
+async function createUser(userObject) {
+    return await user.create({
+        username: userObject?.username || faker.internet.username().replace(/[_.-]/g, ""),
+        email: userObject?.email || faker.internet.email(),
+        password: userObject?.password || "validPassword",
+    });
+}
+
 const orchestrator = {
     waitForAllServices,
     clearDatabase,
     runPendingMigrations,
+    createUser,
 };
 
 export default orchestrator;
