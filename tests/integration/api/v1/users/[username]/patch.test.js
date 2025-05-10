@@ -32,11 +32,11 @@ describe("PATCH Users (By Username) Endpoint", () => {
 
         test("With duplicated username", async () => {
             await orchestrator.createUser({
-                username: "user1"
+                username: "user1",
             });
 
             await orchestrator.createUser({
-                username: "user2"
+                username: "user2",
             });
 
             const response = await fetch(
@@ -131,7 +131,7 @@ describe("PATCH Users (By Username) Endpoint", () => {
 
         test("With unique username", async () => {
             const createdUser = await orchestrator.createUser({
-                username: "user6"
+                username: "user6",
             });
 
             const response = await fetch(
@@ -168,7 +168,7 @@ describe("PATCH Users (By Username) Endpoint", () => {
 
         test("With unique e-mail", async () => {
             const createdUser = await orchestrator.createUser({
-                email: "user8@test.com"
+                email: "user8@test.com",
             });
 
             const response = await fetch(
@@ -237,7 +237,9 @@ describe("PATCH Users (By Username) Endpoint", () => {
                 true,
             );
 
-            const userInDatabase = await user.findOneByUsername(createdUser.username);
+            const userInDatabase = await user.findOneByUsername(
+                createdUser.username,
+            );
             const correctPasswordMatch = await password.compare(
                 "test123@!1",
                 userInDatabase.password,
