@@ -24,7 +24,7 @@ export class ServiceError extends Error {
         super(message || "Service unavailable", {
             cause,
         });
-        this.name = "InternalServerError";
+        this.name = "ServiceError";
         this.action =
             "Try again in 5 minutes. Check if the service is currently available";
         this.status_code = 503;
